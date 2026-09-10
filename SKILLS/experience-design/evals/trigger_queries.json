@@ -1,0 +1,66 @@
+[
+  {
+    "query": "Investiga por qué los usuarios no saben si sus cambios están guardados y diseña una prueba de recuperación.",
+    "should_trigger": true
+  },
+  {
+    "query": "Necesitamos replantear el recorrido de importación, no solo su aspecto. Compara alternativas con evidencia.",
+    "should_trigger": true
+  },
+  {
+    "query": "¿Cómo aplicamos carga cognitiva a este editor sin quitar controles a usuarios expertos?",
+    "should_trigger": true
+  },
+  {
+    "query": "Define UX para una IA que opera sobre archivos: alcance, autorización, cancelación y comprobación.",
+    "should_trigger": true
+  },
+  {
+    "query": "Revisa estas conclusiones de una prueba de usabilidad y separa observaciones de hipótesis.",
+    "should_trigger": true
+  },
+  {
+    "query": "Prepara un experimento para comprobar si este onboarding mejora la primera tarea útil.",
+    "should_trigger": true
+  },
+  {
+    "query": "Diseña la arquitectura de información para un catálogo con usuarios novatos y expertos, y cómo comprobarla.",
+    "should_trigger": true
+  },
+  {
+    "query": "UX review: evaluate task success and cognitive assumptions in this multi-step flow, without changing production.",
+    "should_trigger": true
+  },
+  {
+    "query": "Cambia el radio de esta tarjeta de 8px a 10px respetando los tokens.",
+    "should_trigger": false
+  },
+  {
+    "query": "Implementa exactamente este diseño aprobado, sin reabrir la investigación ni el flujo.",
+    "should_trigger": false
+  },
+  {
+    "query": "Arregla el error TypeScript en este componente; el comportamiento y diseño no cambian.",
+    "should_trigger": false
+  },
+  {
+    "query": "Necesito tres direcciones visuales de marca para un póster, sin investigar un producto.",
+    "should_trigger": false
+  },
+  {
+    "query": "Dame nuevas features radicales que todavía no tiene el proyecto. No audites lo existente.",
+    "should_trigger": false
+  },
+  {
+    "query": "Publica la skill que ya aprobé en su repositorio, sin modificar su contenido.",
+    "should_trigger": false
+  },
+  {
+    "query": "Genera cuatro spritesheets PNG individuales con transparencia.",
+    "should_trigger": false
+  },
+  {
+    "query": "Traduce este texto sobre user experience al español sin investigar ni agregar contenido.",
+    "should_trigger": false
+  }
+]

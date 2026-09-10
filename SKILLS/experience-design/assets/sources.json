@@ -1,0 +1,475 @@
+{
+  "checked_on": "2026-09-05",
+  "sources": [
+    {
+      "id": "NN-ATT",
+      "title": "Tunnel Vision and Selective Attention",
+      "url": "https://www.nngroup.com/articles/tunnel-vision-and-selective-attention/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Observaciones de atención en tareas; no demuestra que cualquier señal contextual será detectada."
+    },
+    {
+      "id": "NN-BANNER",
+      "title": "Banner Blindness: Old and New Findings",
+      "url": "https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Hallazgos aplicados de atención; no regla universal sobre la posición de todos los banners."
+    },
+    {
+      "id": "NN-CHANGE",
+      "title": "Change Blindness in UX",
+      "url": "https://www.nngroup.com/articles/change-blindness-definition/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Cambios visibles pueden no percibirse. No sustituye pruebas en el flujo real."
+    },
+    {
+      "id": "NN-LOAD",
+      "title": "Minimize Cognitive Load to Maximize Usability",
+      "url": "https://www.nngroup.com/articles/minimize-cognitive-load/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Síntesis profesional; distinguir esfuerzo evitable de complejidad necesaria."
+    },
+    {
+      "id": "NN-AESTHETIC",
+      "title": "The Aesthetic-Usability Effect",
+      "url": "https://www.nngroup.com/articles/aesthetic-usability-effect/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Usabilidad percibida y tolerancia a problemas menores; no prueba que lo bello resuelva tareas bloqueadas."
+    },
+    {
+      "id": "NN-CHUNK",
+      "title": "How Chunking Helps Content Processing",
+      "url": "https://www.nngroup.com/articles/chunking/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Agrupación semántica contextual; no cupo fijo de ítems."
+    },
+    {
+      "id": "NN-EXTERNAL",
+      "title": "Working Memory and External Memory",
+      "url": "https://www.nngroup.com/articles/working-memory-external-memory/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Descargar memoria mediante información consultable; no reemplaza un modelo de dominio comprensible."
+    },
+    {
+      "id": "NN-MODEL",
+      "title": "Mental Models",
+      "url": "https://www.nngroup.com/articles/mental-models/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Investigar expectativas del usuario; no deducirlas del modelo técnico."
+    },
+    {
+      "id": "NN-ACTIVE",
+      "title": "The Paradox of the Active User",
+      "url": "https://www.nngroup.com/articles/paradox-of-the-active-user/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Aprendizaje contextual; no presupone que nadie lee documentación."
+    },
+    {
+      "id": "NN-COMPLEX",
+      "title": "Designing Complex Applications",
+      "url": "https://www.nngroup.com/articles/complex-application-design/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Preservar tareas y experiencia de usuarios expertos."
+    },
+    {
+      "id": "NN-CHOICE",
+      "title": "Simplicity vs. Choice",
+      "url": "https://www.nngroup.com/articles/simplicity-vs-choice/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Simplicidad y capacidad deben equilibrarse según la tarea."
+    },
+    {
+      "id": "NN-PROXIMITY",
+      "title": "Proximity Principle in Visual Design",
+      "url": "https://www.nngroup.com/articles/gestalt-proximity/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Agrupación perceptual; probar que coincida con la relación semántica."
+    },
+    {
+      "id": "NN-SIMILARITY",
+      "title": "Similarity Principle in Visual Design",
+      "url": "https://www.nngroup.com/articles/gestalt-similarity/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Apariencia compartida sugiere relaciones, no crea semántica accesible."
+    },
+    {
+      "id": "NN-REGION",
+      "title": "Common Region: Gestalt Principle for UI Design",
+      "url": "https://www.nngroup.com/articles/common-region/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Contención visual; usar cuando la relación lo amerita, no envolver todo en tarjetas."
+    },
+    {
+      "id": "NN-PEAK",
+      "title": "The Peak–End Rule in UX",
+      "url": "https://www.nngroup.com/articles/peak-end-rule/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Recuerdo retrospectivo no equivale a éxito de la tarea completa."
+    },
+    {
+      "id": "NN-PARETO",
+      "title": "The Pareto Principle in UX",
+      "url": "https://www.nngroup.com/articles/pareto-principle/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Priorizar desde datos reales; 80/20 no es una proporción garantizada."
+    },
+    {
+      "id": "NN-LEARNING",
+      "title": "The Power Law of Learning",
+      "url": "https://www.nngroup.com/articles/power-law-learning/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "La práctica importa; no predice curvas de aprendizaje individuales sin medición."
+    },
+    {
+      "id": "NN-FRAMING",
+      "title": "Decision Framing: Cognitive Bias and UX Professionals",
+      "url": "https://www.nngroup.com/articles/decision-framing-cognitive-bias-ux-pros/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Aplicar controles también al diseñador y al evaluador, no solo al usuario."
+    },
+    {
+      "id": "CO-WM",
+      "title": "Cowan: The Magical Mystery Four",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20445769/",
+      "kind": "research-review",
+      "review": "abstract",
+      "checked_on": "2026-09-05",
+      "publication": "2010",
+      "scope_note": "DOI 10.1177/0963721409359277. Capacidad bajo condiciones de memoria; no límite de navegación."
+    },
+    {
+      "id": "CO-ATT",
+      "title": "Oberauer: Working Memory and Attention — A Conceptual Analysis and Review",
+      "url": "https://europepmc.org/abstract/MED/31517246",
+      "kind": "research-review",
+      "review": "metadata-and-abstract",
+      "checked_on": "2026-09-05",
+      "publication": "2019",
+      "scope_note": "DOI 10.5334/joc.58. PMC6688548 bloqueó acceso directo; no auditoría de toda la revisión."
+    },
+    {
+      "id": "CO-PATTERN",
+      "title": "Mattson: Superior pattern processing is the essence of the evolved human brain",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4141622/",
+      "kind": "research-review",
+      "review": "metadata-only",
+      "checked_on": "2026-09-05",
+      "publication": "2014",
+      "scope_note": "Acceso directo bloqueado. Referencia amplia, NO evidencia directa de un patrón de interfaz."
+    },
+    {
+      "id": "CO-ZEIGARNIK",
+      "title": "Ghibellini & Meier: Interruption, recall and resumption",
+      "url": "https://www.researchgate.net/publication/393261073_Interruption_recall_and_resumption_a_meta-analysis_of_the_Zeigarnik_and_Ovsiankina_effects",
+      "kind": "meta-analysis",
+      "review": "abstract-and-selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2025",
+      "scope_note": "DOI 10.1057/s41599-025-05000-w. Sin ventaja general de recuerdo para tareas inconclusas; tendencia a reanudarlas. Nature redirigió a autenticación."
+    },
+    {
+      "id": "CO-GOAL",
+      "title": "Kivetz, Urminsky & Zheng: The Goal-Gradient Hypothesis Resurrected",
+      "url": "https://home.uchicago.edu/ourminsky/Goal-Gradient_Illusionary_Goal_Progress.pdf",
+      "kind": "empirical",
+      "review": "selected-text-and-page-images",
+      "checked_on": "2026-09-05",
+      "publication": "2006",
+      "scope_note": "Experimentos de recompensas y tareas específicas. Transferencia a cada producto: hipótesis por validar."
+    },
+    {
+      "id": "CO-CHOICE",
+      "title": "Chernev, Böckenholt & Goodman: Choice overload — A conceptual review and meta-analysis",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1057740814000916",
+      "kind": "meta-analysis",
+      "review": "abstract",
+      "checked_on": "2026-09-05",
+      "publication": "2015",
+      "scope_note": "DOI 10.1016/j.jcps.2014.08.002. Moderadores de complejidad, tarea, preferencias y objetivo."
+    },
+    {
+      "id": "CO-FITTS",
+      "title": "Fitts: The information capacity of the human motor system",
+      "url": "https://www.cs.princeton.edu/courses/archive/fall08/cos436/FittsJEP1954.pdf",
+      "kind": "empirical",
+      "review": "selected-text-and-page-images",
+      "checked_on": "2026-09-05",
+      "publication": "1954 / 1992",
+      "scope_note": "Trabajo de 1954, reimpresión de 1992. Modelo de movimiento bajo condiciones; no calcula todo el tiempo de decisión."
+    },
+    {
+      "id": "CO-HICK",
+      "title": "Hick: On the Rate of Gain of Information",
+      "url": "https://journals.sagepub.com/doi/10.1080/17470215208416600",
+      "kind": "empirical",
+      "review": "abstract",
+      "checked_on": "2026-09-05",
+      "publication": "1952",
+      "scope_note": "DOI 10.1080/17470215208416600. Elección estímulo–respuesta; no regla para cortar todo menú."
+    },
+    {
+      "id": "CO-HICK-REVIEW",
+      "title": "Proctor & Schneider: Hick’s law for choice reaction time — A review",
+      "url": "https://web.ics.purdue.edu/~dws/pubs/ProctorSchneider_2018_QJEP.pdf",
+      "kind": "research-review",
+      "review": "selected-text-and-page-images",
+      "checked_on": "2026-09-05",
+      "publication": "2018",
+      "scope_note": "DOI 10.1080/17470218.2017.1322622. Práctica, compatibilidad y dependencias secuenciales importan."
+    },
+    {
+      "id": "CO-SERIAL",
+      "title": "Murdock: The serial position effect of free recall",
+      "url": "https://www.researchgate.net/publication/232580580_The_serial_position_effect_of_free_recall",
+      "kind": "empirical",
+      "review": "metadata-only",
+      "checked_on": "2026-09-05",
+      "publication": "1962",
+      "scope_note": "DOI 10.1037/h0045106. Trabajo clásico de recuerdo libre; acceso íntegro no revisado aquí."
+    },
+    {
+      "id": "UX-TESLER",
+      "title": "Tesler’s Law",
+      "url": "https://lawsofux.com/articles/2024/teslers-law/",
+      "kind": "heuristic",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2024",
+      "scope_note": "Ensayo profesional. Heurística de distribución de complejidad, no conservación física."
+    },
+    {
+      "id": "UX-FAMILIAR",
+      "title": "Familiar vs Novel",
+      "url": "https://lawsofux.com/articles/2024/familiar-vs-novel/",
+      "kind": "heuristic",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2024",
+      "scope_note": "Convenciones como punto de partida; no mandato de uniformidad estética."
+    },
+    {
+      "id": "UX-ISOLATION",
+      "title": "Von Restorff Effect",
+      "url": "https://lawsofux.com/von-restorff-effect/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Síntesis de diseño. La aplicación a CTA y atención se trata como hipótesis, no incremento garantizado."
+    },
+    {
+      "id": "UX-FLOW",
+      "title": "Ramsey: Designing For Flow",
+      "url": "https://alistapart.com/article/designingforflow/",
+      "kind": "heuristic",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2007",
+      "scope_note": "Ensayo de diseño, no estudio experimental que valide una interfaz concreta."
+    },
+    {
+      "id": "W3-WCAG22",
+      "title": "Web Content Accessibility Guidelines 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "kind": "standard",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Recomendación vigente consultada. Auditar criterios aplicables completos; no certificación por checklist."
+    },
+    {
+      "id": "W3-TARGET",
+      "title": "Understanding SC 2.5.8: Target Size (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "kind": "standard-guidance",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "24×24 CSS px o excepciones incluidas separación; no confundir con 44×44 de Enhanced AAA."
+    },
+    {
+      "id": "W3-FOCUS",
+      "title": "Understanding SC 2.4.11: Focus Not Obscured (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html",
+      "kind": "standard-guidance",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "AA: no totalmente oculto por contenido del autor. Requisitos mejorados son distintos."
+    },
+    {
+      "id": "W3-COGA",
+      "title": "Making Content Usable for People with Cognitive and Learning Disabilities",
+      "url": "https://www.w3.org/TR/coga-usable/",
+      "kind": "working-group-note",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2021",
+      "scope_note": "Orientación complementaria. No es un requisito adicional de conformidad WCAG."
+    },
+    {
+      "id": "W3-WCAG3",
+      "title": "WCAG 3 Introduction",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/",
+      "kind": "draft",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2026-03-03",
+      "scope_note": "Borrador incompleto; no reemplaza WCAG 2. No prometer vigencia normativa en 2027."
+    },
+    {
+      "id": "AI-HAX",
+      "title": "Amershi et al.: Guidelines for Human-AI Interaction",
+      "url": "https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/",
+      "kind": "empirical-guidance",
+      "review": "abstract-and-selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2019",
+      "scope_note": "18 pautas; evaluadas con profesionales y productos con IA, no validación universal de agentes generativos."
+    },
+    {
+      "id": "AI-PAIR",
+      "title": "PAIR: Errors and Graceful Failures",
+      "url": "https://pair.withgoogle.com/chapter/errors-failing/",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Guía del proveedor sobre fallos, límites y caminos de recuperación."
+    },
+    {
+      "id": "AI-FORCING",
+      "title": "Buçinca, Malaya & Gajos: To Trust or to Think",
+      "url": "https://arxiv.org/abs/2102.09692",
+      "kind": "empirical",
+      "review": "abstract",
+      "checked_on": "2026-09-05",
+      "publication": "2021",
+      "scope_note": "Menor sobredependencia bajo intervenciones concretas, con costes subjetivos y diferencias entre personas."
+    },
+    {
+      "id": "AI-RELIANCE",
+      "title": "Microsoft: Overreliance on AI",
+      "url": "https://learn.microsoft.com/en-us/ai/playbook/technology-guidance/overreliance-on-ai/overreliance-on-ai",
+      "kind": "practice",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Elegir mitigaciones según usuario, tarea y riesgo; la explicación sola no garantiza confianza calibrada."
+    },
+    {
+      "id": "PERF-INP",
+      "title": "Interaction to Next Paint",
+      "url": "https://web.dev/articles/inp",
+      "kind": "platform-guidance",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "INP bueno ≤200 ms al percentil 75 de visitas; no mide la finalización de un trabajo remoto."
+    },
+    {
+      "id": "PERF-VITALS",
+      "title": "Web Vitals",
+      "url": "https://web.dev/articles/vitals",
+      "kind": "platform-guidance",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "LCP, INP y CLS son métricas web; no equivalen a experiencia humana global."
+    },
+    {
+      "id": "RES-HEART",
+      "title": "Rodden, Hutchinson & Fu: Measuring the User Experience on a Large Scale",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "kind": "research-method",
+      "review": "abstract",
+      "checked_on": "2026-09-05",
+      "publication": "2010",
+      "scope_note": "HEART y objetivo–señal–métrica. No exige medir todas las categorías en cada caso."
+    },
+    {
+      "id": "SYS-TOKENS",
+      "title": "Design Tokens Format Module 2025.10",
+      "url": "https://www.designtokens.org/TR/2025.10/format/",
+      "kind": "community-specification",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2025-10",
+      "scope_note": "Formato del Community Group; no W3C Recommendation. Validar soporte real de herramientas."
+    },
+    {
+      "id": "SYS-POSTEL",
+      "title": "RFC 9413: Maintaining Robust Protocols",
+      "url": "https://www.rfc-editor.org/info/rfc9413/",
+      "kind": "technical-guidance",
+      "review": "abstract-and-selected-text",
+      "checked_on": "2026-09-05",
+      "publication": "2023-06",
+      "scope_note": "Crítica a permisividad ambigua en protocolos. Aplicación a formularios es analogía explícita."
+    },
+    {
+      "id": "SYS-SKILLS",
+      "title": "Agent Skills Specification",
+      "url": "https://agentskills.io/specification",
+      "kind": "specification",
+      "review": "selected-text",
+      "checked_on": "2026-09-05",
+      "publication": null,
+      "scope_note": "Formato SKILL.md y recursos locales; compatibilidad de clientes debe verificarse."
+    }
+  ]
+}

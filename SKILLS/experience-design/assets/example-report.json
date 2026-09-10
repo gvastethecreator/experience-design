@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "session": {
+    "id": "demo-import",
+    "project": "Estudio de assets — DEMO SINTÉTICA",
+    "scope": "Revisión de propuesta: comprender el resultado parcial de una importación. No es una auditoría de un producto real.",
+    "mode": "design",
+    "language": "es",
+    "created_on": "2026-09-05",
+    "authorized_changes": "Solo artefactos de demostración locales. Sin cambios remotos.",
+    "limitations": [
+      "No hubo participantes, analítica ni ejecución de un backend.",
+      "Las cifras ilustran conteos sintéticos, no una mejora medida."
+    ]
+  },
+  "conclusion": {
+    "status": "proposed",
+    "summary": "Proponer resumen persistente de resultados parciales y reintento solo de pendientes. Hipótesis pendiente de validación humana."
+  },
+  "evidence": [
+    {
+      "id": "E-01",
+      "kind": "simulation",
+      "location": "Ejemplo conceptual incluido en este paquete",
+      "description": "Importación simulada con elementos completados, rechazados y pendientes. No es observación de personas.",
+      "observed_on": "2026-09-05"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "C-01",
+      "dimension": "Comprensión del estado parcial",
+      "claim_kind": "human",
+      "scope": "Identificar qué se importó y qué requiere corrección",
+      "status": "unknown",
+      "reason": "No se ejecutó una prueba con participantes.",
+      "evidence_ids": []
+    },
+    {
+      "id": "C-02",
+      "dimension": "Idempotencia de reintento",
+      "claim_kind": "interaction",
+      "scope": "No duplicar elementos ya importados",
+      "status": "unknown",
+      "reason": "El ejemplo no implementa un backend.",
+      "evidence_ids": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "UX-01",
+      "title": "El resultado parcial necesita un estado consultable",
+      "task": "Importar una selección y recuperar solo lo pendiente",
+      "state": "partial",
+      "observation": "En la propuesta inicial solo se contemplaba una notificación transitoria; se plantea el riesgo de perder contexto.",
+      "classification": "hypothesis",
+      "claim_kind": "human",
+      "impact": "Podría repetirse trabajo o interpretarse como fallo completo.",
+      "severity": "P1",
+      "confidence": "low",
+      "reach": "Desconocido; no hay datos de producto.",
+      "evidence_ids": [
+        "E-01"
+      ],
+      "principle_ids": [
+        "ATT-03",
+        "INT-02",
+        "AI-05"
+      ],
+      "source_ids": [
+        "NN-CHANGE",
+        "AI-PAIR"
+      ],
+      "proposal": "Mantener lista de completados, fallidos y pendientes; reintentar solo los seleccionados y comprobar el resultado.",
+      "tradeoff": "El resumen ocupa espacio; no convertirlo en ruido permanente.",
+      "acceptance_test": "Sin pistas, la persona identifica resultados y reintenta solo lo fallido; una prueba técnica comprueba que no se duplican efectos.",
+      "status": "planned",
+      "resolution": "",
+      "verification_evidence_ids": []
+    }
+  ],
+  "metrics": [
+    {
+      "id": "M-01",
+      "name": "Tarea correcta sin reimportar completados",
+      "kind": "human",
+      "status": "planned",
+      "unit": "proporción",
+      "baseline": null,
+      "result": null,
+      "sample_size": null,
+      "population": "Usuarios pertinentes del futuro producto, por reclutar con consentimiento",
+      "method": "Prueba de tarea comparada; tamaño y criterio de decisión por definir antes de ejecutar",
+      "comparison": true,
+      "evidence_ids": []
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-01",
+      "question": "¿Toast o resumen persistente?",
+      "choice": "Prototipar resumen persistente y comparar",
+      "rationale": "La tarea continúa después del mensaje; la propuesta hace consultable el estado.",
+      "alternatives": [
+        "Toast con enlace a historial",
+        "Vista de importación con estado por fila"
+      ],
+      "risk": "Añadir contención visual innecesaria si ya existe un historial suficiente",
+      "owner": "Por acordar",
+      "review_trigger": "Inspección del producto real o evidencia de prueba de tarea"
+    }
+  ],
+  "additional_sources": []
+}

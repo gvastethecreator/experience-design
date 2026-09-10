@@ -1,0 +1,700 @@
+{
+  "revision": "2026-09-05-candidate",
+  "notice": "Las acciones y pruebas son propuestas de esta skill. Las fuentes no garantizan mejoras del producto. Cargar solo fichas pertinentes.",
+  "principles": [
+    {
+      "id": "ATT-01",
+      "title": "Atención selectiva y visión de túnel",
+      "family": "Atención",
+      "evidence_kind": "empirical-application",
+      "claim": "Lo visible fuera del foco de la tarea puede no percibirse.",
+      "when": "Un error o estado relevante queda lejos del control activo.",
+      "action": "Colocar el cambio junto a su objeto y conservar una señal consultable.",
+      "avoid": "Resolverlo solo con más color o un toast periférico.",
+      "boundary": "Posición y énfasis no garantizan detección; atención depende de la tarea.",
+      "test": "Completar la tarea sin pistas del moderador y comprobar si se detecta el cambio.",
+      "sources": [
+        "NN-ATT"
+      ]
+    },
+    {
+      "id": "ATT-02",
+      "title": "Ceguera a banners",
+      "family": "Atención",
+      "evidence_kind": "empirical-application",
+      "claim": "La apariencia publicitaria puede favorecer que se ignore contenido útil.",
+      "when": "Ayuda o alertas críticas imitan una promoción.",
+      "action": "Integrar información en el recorrido y diferenciar publicidad de estado del producto.",
+      "avoid": "Hacer un banner más estridente como única solución.",
+      "boundary": "No todo banner es inútil; analizar contexto y significado.",
+      "test": "Comparar descubrimiento de la misma información en contexto de tarea.",
+      "sources": [
+        "NN-BANNER"
+      ]
+    },
+    {
+      "id": "ATT-03",
+      "title": "Ceguera al cambio",
+      "family": "Atención",
+      "evidence_kind": "empirical-application",
+      "claim": "Un cambio entre estados puede pasar inadvertido.",
+      "when": "Importaciones, filtros o IA alteran resultados existentes.",
+      "action": "Mostrar qué cambió, en qué objeto y qué permanece; ofrecer revisión persistente.",
+      "avoid": "Cambiar foco, orden o selección sin aviso.",
+      "boundary": "La animación puede ayudar o distraer; debe existir una señal estática.",
+      "test": "Interrumpir, volver y pedir identificar estado, cambios y siguiente acción.",
+      "sources": [
+        "NN-CHANGE"
+      ]
+    },
+    {
+      "id": "ATT-04",
+      "title": "Distintividad / Von Restorff",
+      "family": "Atención",
+      "evidence_kind": "heuristic",
+      "claim": "La diferencia puede favorecer el recuerdo; su traducción a atención de UI requiere prueba.",
+      "when": "Acciones relevantes compiten visualmente.",
+      "action": "Reservar énfasis para prioridades de tarea y acompañarlo de texto o forma.",
+      "avoid": "Resaltar todo, depender del color o convertir estados en publicidad.",
+      "boundary": "Recordar no equivale a entender ni elegir bien.",
+      "test": "Medir identificación correcta de la prioridad sin aumentar errores de selección.",
+      "sources": [
+        "UX-ISOLATION"
+      ]
+    },
+    {
+      "id": "MEM-01",
+      "title": "Carga cognitiva",
+      "family": "Memoria",
+      "evidence_kind": "research-informed",
+      "claim": "Separar esfuerzo necesario del esfuerzo impuesto por la interfaz.",
+      "when": "La persona calcula, traduce o reconstruye contexto antes de actuar.",
+      "action": "Externalizar comparaciones, reducir cambios de contexto y explicar decisiones necesarias.",
+      "avoid": "Ocultar información crítica para que la pantalla parezca vacía.",
+      "boundary": "El aprendizaje y la revisión de una acción riesgosa pueden necesitar esfuerzo útil.",
+      "test": "Registrar errores, ayuda y esfuerzo percibido además del tiempo.",
+      "sources": [
+        "NN-LOAD",
+        "AI-FORCING"
+      ]
+    },
+    {
+      "id": "MEM-02",
+      "title": "Chunking semántico",
+      "family": "Memoria",
+      "evidence_kind": "heuristic",
+      "claim": "Agrupar por significado puede facilitar el procesamiento.",
+      "when": "Listas o formularios contienen relaciones poco visibles.",
+      "action": "Organizar por tarea, objeto o fase y usar títulos que expliquen la relación.",
+      "avoid": "Crear grupos arbitrarios de siete o cajas sin significado.",
+      "boundary": "Los grupos útiles para un experto pueden ser opacos para un principiante.",
+      "test": "Pedir encontrar y explicar un elemento sin indicar dónde está.",
+      "sources": [
+        "NN-CHUNK"
+      ]
+    },
+    {
+      "id": "MEM-03",
+      "title": "Memoria de trabajo: sin números mágicos",
+      "family": "Memoria",
+      "evidence_kind": "research-informed",
+      "claim": "La capacidad medida depende de condiciones, unidades y tarea.",
+      "when": "Se propone limitar controles usando Miller o el número cuatro.",
+      "action": "Medir qué debe recordarse y qué puede consultarse mientras se actúa.",
+      "avoid": "Usar 7±2 o cuatro como máximo universal de opciones visibles.",
+      "boundary": "Reconocer elementos visibles no es la misma tarea que recordarlos.",
+      "test": "Comparar desempeño con contexto visible frente a contexto que debe recordarse.",
+      "sources": [
+        "CO-WM",
+        "CO-ATT"
+      ]
+    },
+    {
+      "id": "MEM-04",
+      "title": "Memoria externa y reanudación",
+      "family": "Memoria",
+      "evidence_kind": "heuristic",
+      "claim": "El sistema puede conservar información que el usuario necesita recuperar.",
+      "when": "Trabajos largos, comparación entre pantallas o interrupciones.",
+      "action": "Preservar borrador, selección, historial pertinente y resumen de estado.",
+      "avoid": "Recordarlo todo silenciosamente o exponer información privada en otro contexto.",
+      "boundary": "Persistencia necesita control, caducidad y límites claros.",
+      "test": "Interrumpir y reabrir: recuperar trabajo sin repetir datos ni perder contexto.",
+      "sources": [
+        "NN-EXTERNAL",
+        "W3-COGA"
+      ]
+    },
+    {
+      "id": "MEM-05",
+      "title": "Posición serial",
+      "family": "Memoria",
+      "evidence_kind": "hypothesis",
+      "claim": "El recuerdo de una secuencia puede variar con la posición.",
+      "when": "Secuencias de instrucciones o resúmenes que se deben recordar.",
+      "action": "Probar un inicio orientador, agrupación coherente y cierre con próxima acción.",
+      "avoid": "Reordenar navegación experta solo para ubicar elementos al inicio o final.",
+      "boundary": "Los estudios de recuerdo libre no prueban una jerarquía universal de menús.",
+      "test": "Separar prueba de recuerdo diferido de prueba de búsqueda con opciones visibles.",
+      "sources": [
+        "CO-SERIAL"
+      ]
+    },
+    {
+      "id": "DEC-01",
+      "title": "Hick–Hyman contextual",
+      "family": "Decisiones",
+      "evidence_kind": "research-informed",
+      "claim": "La incertidumbre estímulo–respuesta puede aumentar el tiempo de elección.",
+      "when": "Opciones ambiguas o difíciles de discriminar.",
+      "action": "Mejorar nombres, agrupación, relevancia y compatibilidad antes de quitar capacidades.",
+      "avoid": "Reducir cada menú a tres opciones por fórmula.",
+      "boundary": "Práctica, búsqueda, probabilidades y asociaciones modifican la situación.",
+      "test": "Comparar decisión correcta, tiempo y desvíos en usuarios novatos y expertos.",
+      "sources": [
+        "CO-HICK",
+        "CO-HICK-REVIEW"
+      ]
+    },
+    {
+      "id": "DEC-02",
+      "title": "Sobrecarga de elección",
+      "family": "Decisiones",
+      "evidence_kind": "research-informed",
+      "claim": "El efecto de tener muchas opciones depende de la tarea y de las preferencias.",
+      "when": "Catálogos o configuraciones difíciles de comparar.",
+      "action": "Facilitar comparación, filtros y valores sugeridos justificables.",
+      "avoid": "Confundir amplitud del catálogo con evidencia de sobrecarga.",
+      "boundary": "Expertos y personas con preferencias claras pueden necesitar más opciones.",
+      "test": "Medir calidad de elección y abandonos por cohorte, no solo clics.",
+      "sources": [
+        "CO-CHOICE",
+        "NN-CHOICE"
+      ]
+    },
+    {
+      "id": "DEC-03",
+      "title": "Modelos mentales",
+      "family": "Decisiones",
+      "evidence_kind": "research-informed",
+      "claim": "La expectativa del usuario puede diferir del modelo de implementación.",
+      "when": "Guardar, publicar, exportar o sincronizar se confunden.",
+      "action": "Nombrar objetos y acciones según el dominio; explicar alcance y persistencia.",
+      "avoid": "Usar nombres de tablas, componentes o procesos internos como IA.",
+      "boundary": "No inventar modelos mentales a partir de una persona ficticia.",
+      "test": "Preguntar qué esperan que ocurra antes de actuar y contrastarlo con el resultado.",
+      "sources": [
+        "NN-MODEL"
+      ]
+    },
+    {
+      "id": "DEC-04",
+      "title": "Familiaridad y aprendizaje",
+      "family": "Decisiones",
+      "evidence_kind": "heuristic",
+      "claim": "Las convenciones pueden transferir aprendizaje; la novedad puede servir a un objetivo.",
+      "when": "Rediseño o nuevo producto con interacción poco convencional.",
+      "action": "Conservar semánticas comunes y justificar las rupturas por valor de tarea o expresión.",
+      "avoid": "Clonar competidores ni sustituir todo por una plantilla genérica.",
+      "boundary": "La familiaridad visual no compensa un comportamiento distinto al esperado.",
+      "test": "Comparar primer uso, retorno y ejecución experta.",
+      "sources": [
+        "UX-FAMILIAR",
+        "NN-LEARNING"
+      ]
+    },
+    {
+      "id": "DEC-05",
+      "title": "Encuadre y sesgos del evaluador",
+      "family": "Decisiones",
+      "evidence_kind": "research-informed",
+      "claim": "La formulación de una decisión puede influir en su evaluación.",
+      "when": "Pruebas, precios, decisiones sensibles o reportes de diseño.",
+      "action": "Usar preguntas neutrales, orden contrabalanceado y alternativas comparables.",
+      "avoid": "Guiar participantes hacia el diseño favorito o esconder costes.",
+      "boundary": "Un sesgo nombrado no diagnostica la conducta individual.",
+      "test": "Revisar guion, orden y evidencia contradictoria antes de recomendar.",
+      "sources": [
+        "NN-FRAMING"
+      ]
+    },
+    {
+      "id": "DEC-06",
+      "title": "Occam y sesgo de complejidad",
+      "family": "Decisiones",
+      "evidence_kind": "heuristic",
+      "claim": "Preferir una explicación o solución suficiente con menos supuestos es una heurística de trabajo.",
+      "when": "Se propone un sistema grande para fricción localizada.",
+      "action": "Comparar una solución mínima suficiente con la alternativa compleja y sus costes.",
+      "avoid": "Equivaler simple a pocos píxeles o a menos capacidades.",
+      "boundary": "Menos código no implica menos esfuerzo humano o menor riesgo.",
+      "test": "Resolver el mismo escenario adverso en ambas alternativas.",
+      "sources": [
+        "UX-TESLER",
+        "NN-COMPLEX"
+      ]
+    },
+    {
+      "id": "DEC-07",
+      "title": "Tesler: responsabilidad de la complejidad",
+      "family": "Decisiones",
+      "evidence_kind": "heuristic",
+      "claim": "Hacer explícito quién absorbe cada dificultad ayuda a diseñar.",
+      "when": "Automatización, formularios o herramientas profesionales.",
+      "action": "Asignar cada decisión al sistema o a la persona según contexto, coste y autoridad.",
+      "avoid": "Llamar simplicidad a trasladar incertidumbre al usuario o a una IA opaca.",
+      "boundary": "No es una ley física; eliminar requisitos innecesarios sí puede reducir complejidad.",
+      "test": "Enumerar decisiones ocultas, fallos y recuperación de la alternativa.",
+      "sources": [
+        "UX-TESLER"
+      ]
+    },
+    {
+      "id": "DEC-08",
+      "title": "Pareto sin abandonar casos críticos",
+      "family": "Decisiones",
+      "evidence_kind": "heuristic",
+      "claim": "La frecuencia observada puede orientar prioridades.",
+      "when": "Hay demasiados recorridos para investigar en una sola sesión.",
+      "action": "Priorizar impacto, frecuencia y gravedad; incluir fallos raros de alto daño.",
+      "avoid": "Suponer 80/20 exacto o excluir discapacidad por menor volumen.",
+      "boundary": "Frecuencia baja no implica valor bajo ni daño aceptable.",
+      "test": "Publicar cobertura y razones de exclusión; mantener riesgos graves visibles.",
+      "sources": [
+        "NN-PARETO"
+      ]
+    },
+    {
+      "id": "DEC-09",
+      "title": "Parkinson como límite de trabajo",
+      "family": "Decisiones",
+      "evidence_kind": "heuristic",
+      "claim": "Un límite explícito puede ayudar a acotar una investigación; no es evidencia de mejores interfaces.",
+      "when": "La exploración crece sin decisión ni prueba.",
+      "action": "Fijar pregunta, presupuesto y criterio de salida revisable.",
+      "avoid": "Usar urgencia artificial contra el usuario o recortar pruebas de riesgo.",
+      "boundary": "El tiempo disponible no determina la complejidad real de la tarea.",
+      "test": "Cerrar por evidencia suficiente o registrar bloqueo, no por completar una cuota.",
+      "sources": [
+        "RES-HEART"
+      ]
+    },
+    {
+      "id": "DEC-10",
+      "title": "Robustez sin ambigüedad",
+      "family": "Decisiones",
+      "evidence_kind": "design-policy",
+      "claim": "Aceptar variaciones seguras no obliga a adivinar significado.",
+      "when": "Entradas de fecha, dinero, nombres, unidades o importación.",
+      "action": "Normalizar solo formatos inequívocos; mostrar interpretación y pedir decisión cuando importa.",
+      "avoid": "Convertir silenciosamente fechas ambiguas, monedas o permisos.",
+      "boundary": "Aplicación a UX de una cautela de ingeniería, no resultado experimental de formularios.",
+      "test": "Probar entradas locales difíciles y verificar que el dato semántico no cambie.",
+      "sources": [
+        "SYS-POSTEL"
+      ]
+    },
+    {
+      "id": "MOT-01",
+      "title": "Gradiente de meta",
+      "family": "Motivación",
+      "evidence_kind": "empirical-application",
+      "claim": "Acercarse a una recompensa puede cambiar el esfuerzo en ciertos contextos.",
+      "when": "Un recorrido tiene avances reales y un objetivo elegido.",
+      "action": "Mostrar hitos verificables y lo que resta sin ocultar requisitos.",
+      "avoid": "Inventar progreso, urgencia o penalizaciones para forzar continuidad.",
+      "boundary": "Resultados en recompensas no garantizan activación en todo software.",
+      "test": "Comparar finalización útil, comprensión y arrepentimiento.",
+      "sources": [
+        "CO-GOAL"
+      ]
+    },
+    {
+      "id": "MOT-02",
+      "title": "Progreso otorgado honesto",
+      "family": "Motivación",
+      "evidence_kind": "design-policy",
+      "claim": "Reconocer preparación real puede dar orientación inicial.",
+      "when": "Ya existen datos o pasos legítimamente completados.",
+      "action": "Mostrar qué se resolvió, de dónde provino y cómo corregirlo.",
+      "avoid": "Marcar pasos ficticios como hechos para explotar un sesgo.",
+      "boundary": "Una técnica estudiada puede ser inadecuada aunque aumente conversión.",
+      "test": "La persona debe explicar qué está hecho y qué autorizó realmente.",
+      "sources": [
+        "CO-GOAL"
+      ]
+    },
+    {
+      "id": "MOT-03",
+      "title": "Zeigarnik y Ovsiankina",
+      "family": "Motivación",
+      "evidence_kind": "research-informed",
+      "claim": "La evidencia reciente distingue recuerdo de tareas y tendencia a reanudarlas.",
+      "when": "Interrupciones, borradores o recordatorios.",
+      "action": "Facilitar volver voluntariamente con contexto conservado.",
+      "avoid": "Prometer más memoria o crear ansiedad mediante tareas perpetuamente inconclusas.",
+      "boundary": "El metaanálisis de 2025 no encuentra ventaja general de recuerdo para lo inconcluso.",
+      "test": "Medir recuperación del trabajo, no compulsión o sesiones prolongadas.",
+      "sources": [
+        "CO-ZEIGARNIK"
+      ]
+    },
+    {
+      "id": "MOT-04",
+      "title": "Flow con salida",
+      "family": "Motivación",
+      "evidence_kind": "heuristic",
+      "claim": "Metas claras, continuidad y feedback son candidatos a reducir interrupciones de trabajo.",
+      "when": "Edición, creación, práctica o recorridos largos.",
+      "action": "Conservar contexto, ofrecer atajos descubribles y permitir pausar sin castigo.",
+      "avoid": "Equiparar flow con scroll infinito o maximizar tiempo cautivo.",
+      "boundary": "Fluidez subjetiva no certifica productividad ni decisiones correctas.",
+      "test": "Observar continuidad, errores, recuperación y sensación de control.",
+      "sources": [
+        "UX-FLOW"
+      ]
+    },
+    {
+      "id": "MOT-05",
+      "title": "Peak–end sin maquillaje",
+      "family": "Motivación",
+      "evidence_kind": "empirical-application",
+      "claim": "La evaluación retrospectiva puede ser sensible a momentos destacados y al cierre.",
+      "when": "Fin de una tarea, error importante o confirmación de resultado.",
+      "action": "Cerrar con resultado verificable, consecuencias y camino siguiente.",
+      "avoid": "Compensar un recorrido dañino con confeti o una pantalla final bonita.",
+      "boundary": "Recuerdo agradable no prueba corrección ni accesibilidad.",
+      "test": "Separar evaluación retrospectiva, desempeño y recuperación.",
+      "sources": [
+        "NN-PEAK"
+      ]
+    },
+    {
+      "id": "MOT-06",
+      "title": "Aprender mientras se hace",
+      "family": "Motivación",
+      "evidence_kind": "heuristic",
+      "claim": "Algunas personas priorizan la tarea inmediata sobre aprender primero.",
+      "when": "Onboarding o funciones complejas.",
+      "action": "Permitir empezar; ofrecer ejemplo útil, ayuda contextual y ruta experta.",
+      "avoid": "Obligar a completar tours extensos antes de obtener valor.",
+      "boundary": "Tareas peligrosas pueden exigir formación o comprobación previa.",
+      "test": "Intentar tarea inicial sin tour y luego repetir una tarea avanzada.",
+      "sources": [
+        "NN-ACTIVE"
+      ]
+    },
+    {
+      "id": "VIS-01",
+      "title": "Estética y usabilidad percibida",
+      "family": "Percepción",
+      "evidence_kind": "research-informed",
+      "claim": "Atractivo y facilidad percibida pueden relacionarse sin garantizar éxito.",
+      "when": "Un diseño recibe elogios pero el flujo sigue fallando.",
+      "action": "Evaluar craft y resultados de tarea por separado, conservando identidad visual.",
+      "avoid": "Usar gusto, modernidad o un score estético para aprobar un bloqueo.",
+      "boundary": "La tolerancia a defectos menores no resuelve errores graves.",
+      "test": "Contrastar opinión, conducta observable y fallos de recuperación.",
+      "sources": [
+        "NN-AESTHETIC"
+      ]
+    },
+    {
+      "id": "VIS-02",
+      "title": "Proximidad",
+      "family": "Percepción",
+      "evidence_kind": "heuristic",
+      "claim": "La cercanía visual sugiere relación.",
+      "when": "Etiquetas, ayuda y controles se asocian mal.",
+      "action": "Hacer que espacios y alineación expresen relaciones reales.",
+      "avoid": "Alejar una etiqueta de su campo o cambiar agrupación según ancho sin intención.",
+      "boundary": "Agrupación visual y orden de lectura accesible son contratos distintos.",
+      "test": "Comprobar asociación de campos y lectura lineal en ancho estrecho.",
+      "sources": [
+        "NN-PROXIMITY"
+      ]
+    },
+    {
+      "id": "VIS-03",
+      "title": "Similitud",
+      "family": "Percepción",
+      "evidence_kind": "heuristic",
+      "claim": "Elementos parecidos sugieren funciones o categorías relacionadas.",
+      "when": "Botones, estados o elementos de lista usan lenguajes inconsistentes.",
+      "action": "Mantener un significado por patrón y variaciones explícitas por estado.",
+      "avoid": "Hacer que un elemento decorativo parezca accionable.",
+      "boundary": "Consistencia sin contraste de estados también confunde.",
+      "test": "Pedir predecir qué es interactivo y cómo se distingue la selección.",
+      "sources": [
+        "NN-SIMILARITY"
+      ]
+    },
+    {
+      "id": "VIS-04",
+      "title": "Región común",
+      "family": "Percepción",
+      "evidence_kind": "heuristic",
+      "claim": "Un contenedor puede hacer perceptible un grupo.",
+      "when": "Configuraciones o resultados carecen de límites claros.",
+      "action": "Usar contención para una unidad real de tarea o información.",
+      "avoid": "Convertir cada línea en una tarjeta y duplicar jerarquías.",
+      "boundary": "Más superficies pueden dificultar escaneo en herramientas densas.",
+      "test": "Comparar localización de información y asociación de acciones.",
+      "sources": [
+        "NN-REGION"
+      ]
+    },
+    {
+      "id": "VIS-05",
+      "title": "Continuidad, conexión y figura–fondo",
+      "family": "Percepción",
+      "evidence_kind": "hypothesis",
+      "claim": "Conexiones y separación de capas pueden explicar relaciones y foco.",
+      "when": "Grafos, selección, paneles o elementos superpuestos.",
+      "action": "Conectar solo relaciones verdaderas y conservar nombres, orden y contraste.",
+      "avoid": "Depender solo de líneas, movimiento común o cierre visual para entender el sistema.",
+      "boundary": "Agrupación Gestalt es una lente de diseño; no valida accesibilidad ni comprensión de un grafo.",
+      "test": "Leer el resultado sin color, sin movimiento y mediante alternativa lineal.",
+      "sources": [
+        "NN-PROXIMITY",
+        "NN-REGION",
+        "W3-WCAG22"
+      ]
+    },
+    {
+      "id": "INT-01",
+      "title": "Fitts y esfuerzo motor",
+      "family": "Interacción",
+      "evidence_kind": "research-informed",
+      "claim": "Distancia y ancho efectivo influyen en tareas de apuntado bajo determinadas condiciones.",
+      "when": "Acciones pequeñas, separadas o imprecisas.",
+      "action": "Mejorar hit area, separación y ubicación según ratón, toque o asistencia.",
+      "avoid": "Agrandar solo el dibujo o aplicar una constante universal sin revisar excepciones.",
+      "boundary": "Modelo motor no incluye por sí solo comprensión, búsqueda ni peligros de activar por error.",
+      "test": "Medir aciertos y errores con el método de entrada real.",
+      "sources": [
+        "CO-FITTS",
+        "W3-TARGET"
+      ]
+    },
+    {
+      "id": "INT-02",
+      "title": "Recuperación y reversibilidad",
+      "family": "Interacción",
+      "evidence_kind": "design-policy",
+      "claim": "Una tarea no está diseñada por completo sin su fallo y su recuperación.",
+      "when": "Borrado, exportación, guardado, importación o cambios masivos.",
+      "action": "Prevenir errores costosos y ofrecer retry idempotente, undo real o compensación explícita.",
+      "avoid": "Prometer deshacer cuando el backend no puede revertir consecuencias.",
+      "boundary": "Confirmación no reemplaza un modelo seguro; no pedirla para cada gesto trivial.",
+      "test": "Provocar fallo parcial y verificar qué persiste, qué se repite y qué se puede revertir.",
+      "sources": [
+        "AI-PAIR"
+      ]
+    },
+    {
+      "id": "INT-03",
+      "title": "Modos, selección y alcance",
+      "family": "Interacción",
+      "evidence_kind": "design-policy",
+      "claim": "Las acciones deben revelar sobre qué objetos y en qué modo operan.",
+      "when": "Editores, herramientas creativas, paneles y acciones por lote.",
+      "action": "Hacer visible selección, herramienta activa, alcance y estado sucio o guardado.",
+      "avoid": "Ocultar controles frecuentes en nombre del minimalismo.",
+      "boundary": "Densidad informativa útil puede ser mejor que una pantalla escasa.",
+      "test": "Cambiar de modo y selección; anticipar y comprobar el conjunto afectado.",
+      "sources": [
+        "NN-COMPLEX",
+        "NN-MODEL"
+      ]
+    },
+    {
+      "id": "ACC-01",
+      "title": "Teclado, foco y alternativas",
+      "family": "Inclusión",
+      "evidence_kind": "standard",
+      "claim": "Revisar entrada, foco y equivalentes accesibles requiere interacción, no solo capturas.",
+      "when": "Controles, diálogos, arrastre o experiencias no convencionales.",
+      "action": "Ofrecer camino por teclado, foco visible y alternativa a arrastre cuando aplica.",
+      "avoid": "Declarar conformidad a partir de un escáner o una captura.",
+      "boundary": "WCAG 2.2 tiene niveles y excepciones; verificar el criterio exacto.",
+      "test": "Ejecutar la tarea con teclado y tecnología de asistencia disponible; registrar lo no probado.",
+      "sources": [
+        "W3-WCAG22",
+        "W3-FOCUS"
+      ]
+    },
+    {
+      "id": "ACC-02",
+      "title": "Accesibilidad cognitiva",
+      "family": "Inclusión",
+      "evidence_kind": "guidance",
+      "claim": "Comprender, recordar y recuperarse son dimensiones explícitas del diseño inclusivo.",
+      "when": "Autenticación, ayuda, carga de datos o instrucciones complejas.",
+      "action": "Usar lenguaje claro, contexto persistente y ayudas que no dependan de recordar claves arbitrarias.",
+      "avoid": "Asignar límites o preferencias a una discapacidad sin investigación.",
+      "boundary": "COGA complementa WCAG; no añade una certificación automática.",
+      "test": "Incluir personas pertinentes y comprobar autonomía, no solo lectura de etiquetas.",
+      "sources": [
+        "W3-COGA"
+      ]
+    },
+    {
+      "id": "ACC-03",
+      "title": "Contenido difícil e internacionalización",
+      "family": "Inclusión",
+      "evidence_kind": "design-policy",
+      "claim": "Diseñar con datos reales obliga a aceptar variedad de longitud, escritura y contexto.",
+      "when": "Nombres largos, plurales, fechas, RTL, zoom o mezcla de idiomas.",
+      "action": "Probar contenido límite, orden lógico, unidades y expansión; preservar significado.",
+      "avoid": "Truncar la única diferencia identificadora o interpretar una fecha ambigua.",
+      "boundary": "Dirección de texto, números, iconos y orden de acciones requieren decisiones separadas.",
+      "test": "Usar fixtures largos, zoom y locales relevantes en el flujo afectado.",
+      "sources": [
+        "W3-WCAG22",
+        "SYS-POSTEL"
+      ]
+    },
+    {
+      "id": "AI-01",
+      "title": "Contrato de delegación",
+      "family": "IA y agentes",
+      "evidence_kind": "design-policy",
+      "claim": "Entender y autorizar una acción es distinto de pedir una sugerencia.",
+      "when": "Una IA actúa sobre archivos, mensajes, cuentas o transacciones.",
+      "action": "Separar propuesta, alcance, autorización, ejecución y comprobante; ofrecer interrupción con límites honestos.",
+      "avoid": "Tratar conversación o confianza como permiso ilimitado.",
+      "boundary": "El diseño no otorga capacidades ni permisos que la herramienta no tenga.",
+      "test": "Intentar acción no autorizada, cambio de alcance, cancelación y fallo parcial.",
+      "sources": [
+        "AI-HAX",
+        "AI-PAIR"
+      ]
+    },
+    {
+      "id": "AI-02",
+      "title": "Confianza calibrada y fricción útil",
+      "family": "IA y agentes",
+      "evidence_kind": "research-informed",
+      "claim": "Reducir sobredependencia puede requerir esfuerzo de revisión proporcional al riesgo.",
+      "when": "Recomendaciones o decisiones con consecuencias.",
+      "action": "Mostrar origen, límites verificables y posibilidad de corregir; pedir revisión donde cambia el riesgo.",
+      "avoid": "Inventar porcentajes de confianza o usar una explicación persuasiva como prueba.",
+      "boundary": "Más explicación o fricción no siempre mejora la decisión; depende del caso.",
+      "test": "Medir aceptación de resultados erróneos además de satisfacción y velocidad.",
+      "sources": [
+        "AI-FORCING",
+        "AI-RELIANCE"
+      ]
+    },
+    {
+      "id": "AI-03",
+      "title": "UI adaptativa estable",
+      "family": "IA y agentes",
+      "evidence_kind": "hypothesis",
+      "claim": "La adaptación debe mantener control y orientación, no reordenar el mundo sin aviso.",
+      "when": "Interfaces generativas, recomendaciones o paneles que cambian con contexto.",
+      "action": "Conservar anclas, selección, foco y ruta manual; permitir rechazar y revertir adaptación.",
+      "avoid": "Mover el botón activo, cambiar permisos o sustituir preferencias silenciosamente.",
+      "boundary": "Es un contrato propuesto, no una predicción de interfaces dominantes en 2027.",
+      "test": "Activar cambios durante una tarea y comprobar continuidad, foco y recuperación.",
+      "sources": [
+        "AI-HAX",
+        "NN-CHANGE"
+      ]
+    },
+    {
+      "id": "AI-04",
+      "title": "Memoria y privacidad controlables",
+      "family": "IA y agentes",
+      "evidence_kind": "design-policy",
+      "claim": "Guardar contexto útil exige que la persona comprenda su alcance.",
+      "when": "Memoria, personalización, archivos privados o historial de agentes.",
+      "action": "Explicar qué se usa, de dónde sale y cómo corregir, excluir o borrar cuando exista capacidad real.",
+      "avoid": "Prometer olvido total, procesamiento local o privacidad que la arquitectura no garantiza.",
+      "boundary": "No deducir consentimiento entre cuentas, dispositivos o proyectos.",
+      "test": "Verificar aislamiento de contexto y hacer coincidir controles con efectos reales.",
+      "sources": [
+        "AI-HAX"
+      ]
+    },
+    {
+      "id": "AI-05",
+      "title": "Estados asíncronos y recibos",
+      "family": "IA y agentes",
+      "evidence_kind": "design-policy",
+      "claim": "Texto generado no es prueba de que una acción se completó.",
+      "when": "Agentes, generación de assets y trabajos prolongados.",
+      "action": "Distinguir cola, ejecución, espera humana, parcial, cancelación y final verificado mediante recibos reales.",
+      "avoid": "Mostrar éxito porque el modelo lo narró o progreso porcentual sin denominador.",
+      "boundary": "Cancelar solicitud no implica revertir efectos ya ocurridos.",
+      "test": "Cortar conexión y repetir solicitud: no duplicar efectos ni perder el resultado parcial.",
+      "sources": [
+        "AI-PAIR",
+        "AI-HAX"
+      ]
+    },
+    {
+      "id": "PERF-01",
+      "title": "Latencia de interacción y de tarea",
+      "family": "Rendimiento",
+      "evidence_kind": "platform-guidance",
+      "claim": "INP y duración total del trabajo describen cosas diferentes.",
+      "when": "La interfaz responde lento o un proceso tarda.",
+      "action": "Medir feedback local, primer resultado útil, final y fallos por separado.",
+      "avoid": "Tratar 400 ms históricos como garantía universal o confundir streaming con trabajo terminado.",
+      "boundary": "Los percentiles web no certifican productividad, ni aplican igual a un proceso nativo.",
+      "test": "Medir en dispositivo y carga reales, con percentiles y segmentos declarados.",
+      "sources": [
+        "PERF-INP",
+        "PERF-VITALS"
+      ]
+    },
+    {
+      "id": "PERF-02",
+      "title": "Progreso veraz",
+      "family": "Rendimiento",
+      "evidence_kind": "design-policy",
+      "claim": "El indicador debe representar conocimiento real del estado.",
+      "when": "Importaciones, render, descarga o generación.",
+      "action": "Usar conteos reales cuando hay denominador; en otro caso describir fase y controles disponibles.",
+      "avoid": "Animar un porcentaje inventado, bloquear la cancelación o reiniciar trabajo silenciosamente.",
+      "boundary": "Una estimación debe rotularse y poder corregirse; no prometer tiempo exacto.",
+      "test": "Simular lento, error, desconexión y cancelación, comprobando mensajes y trabajo preservado.",
+      "sources": [
+        "AI-PAIR",
+        "PERF-INP"
+      ]
+    },
+    {
+      "id": "RES-01",
+      "title": "Objetivo → señal → métrica",
+      "family": "Investigación",
+      "evidence_kind": "research-method",
+      "claim": "Elegir una medida debe partir de un objetivo de usuario.",
+      "when": "Se pide mejorar UX, activación o productividad.",
+      "action": "Definir resultado primario, indicador de daño, segmento y criterio de decisión antes de medir.",
+      "avoid": "Inventar mejoras porcentuales o usar más tiempo dentro como éxito universal.",
+      "boundary": "Un piloto cualitativo no estima efectos poblacionales ni prueba causalidad.",
+      "test": "Guardar protocolo, datos, denominadores y límites de interpretación.",
+      "sources": [
+        "RES-HEART"
+      ]
+    },
+    {
+      "id": "SYS-01",
+      "title": "Sistema visual semántico y portable",
+      "family": "Sistemas",
+      "evidence_kind": "community-specification",
+      "claim": "Los tokens pueden representar decisiones reutilizables con significados estables.",
+      "when": "Temas, densidad, accesibilidad o varias plataformas.",
+      "action": "Usar roles semánticos, preservar componentes existentes y validar formato soportado al exportar.",
+      "avoid": "Migrar bibliotecas solo por moda o llamar W3C Recommendation a DTCG.",
+      "boundary": "El formato no garantiza buen diseño ni interoperabilidad de toda herramienta.",
+      "test": "Comprobar estados, contraste, alias y fallback en consumidores reales.",
+      "sources": [
+        "SYS-TOKENS"
+      ]
+    }
+  ]
+}

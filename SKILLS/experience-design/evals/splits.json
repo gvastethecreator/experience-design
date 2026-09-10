@@ -1,0 +1,23 @@
+{
+  "note": "Casos preparados, no ejecutados. No mostrar rúbrica ni expected_output al agente que realiza la tarea.",
+  "development": [
+    "dense-editor",
+    "source-only-proof",
+    "high-risk-cleanup",
+    "synthetic-research",
+    "zeigarnik-ethics",
+    "low-traffic-validation",
+    "aesthetic-mask",
+    "narrow-polish"
+  ],
+  "held_out": [
+    "adaptive-agent",
+    "wcag-2027",
+    "locales-and-drag",
+    "apply-authorized",
+    "uncertain-high-risk",
+    "creative-greenfield"
+  ],
+  "natural_invocation_status": "not-run; candidate uses explicit-only adapter",
+  "comparative_behavior_status": "not-run"
+}
