@@ -367,9 +367,9 @@
       "url": "https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/",
       "kind": "draft",
       "review": "selected-text",
-      "checked_on": "2026-09-05",
-      "publication": "2026-03-03",
-      "scope_note": "Borrador incompleto; no reemplaza WCAG 2. No prometer vigencia normativa en 2027."
+      "checked_on": "2026-10-27",
+      "publication": "2026-09",
+      "scope_note": "W3C publicó nuevos borradores en septiembre de 2026. Siguen incompletos y no reemplazan WCAG 2; no prometer vigencia normativa en 2027."
     },
     {
       "id": "AI-HAX",
