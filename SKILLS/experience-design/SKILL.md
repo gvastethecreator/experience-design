@@ -77,7 +77,7 @@ Mantener comparables datos, estado y entorno. Probar también lo que podría emp
 
 ### 6. Entregar la decisión y sus límites
 
-Informar resultado, evidencia, capacidades preservadas y riesgos abiertos. Para un informe durable, aplicar [reporting.md](references/reporting.md): JSON canónico y vistas derivadas cuando aporten valor. Los templates de [brief](assets/brief.md), [decisión](assets/decision.md) y [experimento](assets/experiment.md) son opcionales. Antes de redactar un plan o tarea, aplicar `simple-english` si está disponible, conservando el idioma del artefacto.
+Informar resultado, evidencia, capacidades preservadas y riesgos abiertos. Para un informe durable, aplicar [reporting.md](references/reporting.md): JSON canónico y vistas derivadas cuando aporten valor. Los templates de [brief](assets/brief.md), [decisión](assets/decision.md) y [experimento](assets/experiment.md) son opcionales. Redactar planes y tareas con acciones concretas, frases cortas y términos consistentes; conservar el idioma del artefacto, comandos, identificadores e incertidumbre. No requiere otra skill de redacción.
 
 Un diseño puede estar entregado como `proposed`. Reservar `verified-in-scope` para el alcance efectivamente comprobado, sin cobertura fallida o desconocida ni riesgos P0/P1 abiertos. Evitar un score global que esconda daño o incertidumbre.
 
