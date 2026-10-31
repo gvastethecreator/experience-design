@@ -1,35 +1,35 @@
-# Interacción, arquitectura de información y estados
+# Interaction, information architecture, and states
 
-## Modelo antes que pantalla
+## Model before screen
 
-Identificar objetos del dominio, quién los posee, qué acciones admiten, qué alcance tiene cada acción y qué estados persisten. Mapear rutas principales, entradas profundas, retorno y salidas. Usar verbos que distingan guardar, publicar, aplicar y exportar. Hacer explícitos los límites entre documento, proyecto, cuenta y dispositivo.
+Identify domain objects, who owns them, which actions they support, what scope each action has, and which states persist. Map main routes, deep entry points, return, and exits. Use verbs that distinguish save, publish, apply, and export. Make the boundaries between document, project, account, and device explicit.
 
-Diseñar estados y transiciones junto con layouts. Para cada transición costosa especificar precondición, disparador, cambio local, efecto remoto, feedback, foco, rollback y recuperación. Estado pendiente no es éxito. Un fallo parcial conserva la identidad de elementos completados y pendientes.
+Design states and transitions together with layouts. For each costly transition specify precondition, trigger, local change, remote effect, feedback, focus, rollback, and recovery. A pending state is not success. A partial failure keeps the identity of completed and pending items.
 
-## Densidad útil
+## Useful density
 
-En herramientas expertas, comparar el coste de escanear información visible con el coste de buscarla en menús o recordarla. La divulgación progresiva es útil para lo infrecuente o contextual, no excusa para ocultar lo central. Mantener comando frecuente, selección, modo y estado cerca del artefacto editado. Evaluar acceso por teclado y atajos descubribles.
+In expert tools, compare the cost of scanning visible information with the cost of finding it in menus or remembering it. Progressive disclosure is useful for what is infrequent or contextual, not an excuse to hide what is central. Keep frequent commands, selection, mode, and state close to the edited artifact. Evaluate keyboard access and discoverable shortcuts.
 
-Para primeros usos, ofrecer ejemplos y orientación en el punto de necesidad. Para retornos, restaurar contexto pertinente. Evitar personalización que cambie ubicaciones durante una tarea. Los contratos recomendados aquí se apoyan en NN-COMPLEX, NN-MODEL y NN-ACTIVE, pero requieren prueba local.
+For first uses, offer examples and guidance at the point of need. For returns, restore relevant context. Avoid personalization that changes locations during a task. The contracts recommended here rely on NN-COMPLEX, NN-MODEL, and NN-ACTIVE, but they need local testing.
 
-## Patrones a inspeccionar por riesgo
+## Patterns to inspect by risk
 
-**Formularios:** etiquetas persistentes, requisito y formato antes del error, valores conservados, errores identificables y corrección sin rehacer todo. Validación inmediata solo cuando hay suficiente información; no castigar a quien todavía está escribiendo.
+**Forms:** persistent labels, requirement and format before the error, preserved values, identifiable errors, and correction without redoing everything. Immediate validation only when there is enough information; do not punish someone who is still typing.
 
-**Búsqueda y selección:** alcance visible, nombres discriminables, filtros reversibles y diferencia entre sin datos, sin resultados, falta de permiso y fallo. Una acción masiva explicita cuántos elementos selecciona, incluso fuera de página o filtro.
+**Search and selection:** visible scope, distinguishable names, reversible filters, and a difference between no data, no results, missing permission, and failure. A bulk action states how many items it selects, including items outside the page or filter.
 
-**Guardar/importar/exportar:** distinguir cambios locales y remotos, salida prevista, conflicto de nombres, formatos, sobrescritura y resultado comprobable. No mostrar una descarga como completada solo porque empezó a generarse.
+**Save/import/export:** distinguish local and remote changes, expected output, name conflicts, formats, overwriting, and a verifiable result. Do not show a download as completed just because its generation started.
 
-**Destructivas:** conservar contexto y especificar objeto/consecuencia. Undo solo si revierte realmente. Si no puede revertirse, describir límites y exigir revisión proporcional. Separar autenticación de consentimiento al alcance.
+**Destructive actions:** keep context and specify object/consequence. Undo only if it actually reverts. If it cannot be reverted, describe the limits and require proportional review. Separate authentication from consent to the scope.
 
-**Colaboración:** exponer conflictos, versiones y edición concurrente cuando sean pertinentes. No sobrescribir silenciosamente. Explicar quién puede ver y modificar cada artefacto.
+**Collaboration:** expose conflicts, versions, and concurrent editing when relevant. Do not overwrite silently. Explain who can view and modify each artifact.
 
-## Ejemplos de aplicación, no auditorías de productos
+## Application examples, not product audits
 
-Editor visual: guardar/exportar/seleccionar una región son contratos distintos. Limpieza del sistema: analizar, seleccionar, ejecutar y recuperar no deben ser un único botón opaco. Estudio musical: evitar interrupciones que alteren reproducción, modo o selección. Biblioteca de assets: diferenciar archivo, categoría, versión y estado de aprobación.
+Visual editor: save, export, and select a region are different contracts. System cleanup: analyze, select, execute, and recover must not be a single opaque button. Music studio: avoid interruptions that alter playback, mode, or selection. Asset library: differentiate file, category, version, and approval state.
 
-Estos escenarios son ejemplos del dominio; no afirman defectos de un repositorio no inspeccionado.
+These scenarios are domain examples; they do not claim defects in an uninspected repository.
 
-## Entrega mínima
+## Minimum delivery
 
-Una transición se entrega con disparador, alcance, estado resultante y prueba. Un recorrido material añade estados de fallo relevantes y contrato de datos. Solo añadir un diagrama, tabla o prototipo cuando reduce una ambigüedad real. Para uno o dos estados, la prosa precisa puede ser suficiente.
+A transition is delivered with trigger, scope, resulting state, and test. A material journey adds relevant failure states and a data contract. Add a diagram, table, or prototype only when it reduces a real ambiguity. For one or two states, precise prose can be enough.

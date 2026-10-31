@@ -1,6 +1,6 @@
 interface:
   display_name: "Experience Design"
-  short_description: "Diseño UX con evidencia, tareas y validación"
-  default_prompt: "Usa $experience-design para investigar este recorrido y proponer una decisión de UX comprobable, sin ampliar el alcance autorizado."
+  short_description: "UX design with evidence, tasks, and validation"
+  default_prompt: "Use $experience-design to research this journey and propose a testable UX decision, without expanding the authorized scope."
 policy:
   allow_implicit_invocation: false

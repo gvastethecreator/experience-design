@@ -1,31 +1,31 @@
-# Diseño visual, contenido y prototipos
+# Visual design, content, and prototypes
 
-## Dirección derivada del producto
+## Direction derived from the product
 
-Identificar el registro: herramienta, servicio transaccional, contenido, marca, experiencia creativa o mezcla con regiones explícitas. Preservar recursos aprobados, tokens, voz, densidad y convenciones que funcionan. No convertir todo en dashboard, tarjetas, gradientes o una paleta de moda.
+Identify the register: tool, transactional service, content, brand, creative experience, or a mix with explicit regions. Preserve approved assets, tokens, voice, density, and conventions that work. Do not turn everything into a dashboard, cards, gradients, or a trendy palette.
 
-Escribir el argumento visual: qué domina, qué ayuda a decidir, qué expresa identidad y qué se retira. En dirección nueva, comparar alternativas de jerarquía, organización o interacción, no solo colores. En una corrección acotada, no producir tres propuestas por ritual.
+Write the visual argument: what dominates, what helps decide, what expresses identity, and what is removed. In a new direction, compare alternatives of hierarchy, organization, or interaction, not only colors. In a bounded fix, do not produce three proposals by ritual.
 
-El craft incluye alineación, escala tipográfica, ritmo, contraste, proporciones, iconos, superficies y estados. Una captura puede revelar defectos locales de craft, pero no verificar teclado o recuperación. El atractivo se evalúa separadamente del éxito de tarea (NN-AESTHETIC).
+Craft includes alignment, type scale, rhythm, contrast, proportions, icons, surfaces, and states. A screenshot can reveal local craft defects, but it cannot verify keyboard or recovery. Appeal is evaluated separately from task success (NN-AESTHETIC).
 
-## Jerarquía y semántica
+## Hierarchy and semantics
 
-Proximidad, similitud y región común son lentes para expresar agrupaciones. Hacer coincidir relación visual, nombre y comportamiento. No depender de color, movimiento o líneas para comunicar el único significado. No confundir una superficie compartida con una relación semántica que no existe (NN-PROXIMITY; NN-SIMILARITY; NN-REGION).
+Proximity, similarity, and common region are lenses to express groupings. Make visual relationship, name, and behavior match. Do not depend on color, motion, or lines to communicate the only meaning. Do not confuse a shared surface with a semantic relationship that does not exist (NN-PROXIMITY; NN-SIMILARITY; NN-REGION).
 
-Para datos, mostrar unidades, origen, rango y frescura cuando afectan decisiones. Comparaciones honestas requieren escalas comparables y contexto. Una cifra de ejemplo debe quedar rotulada como ejemplo. No fabricar dashboards, testimonios, métricas o “datos reales” para aumentar credibilidad.
+For data, show units, origin, range, and freshness when they affect decisions. Honest comparisons need comparable scales and context. An example figure must stay labeled as an example. Do not fabricate dashboards, testimonials, metrics, or “real data” to increase credibility.
 
-## Contenido como interacción
+## Content as interaction
 
-Un mensaje de error describe qué ocurrió, qué se conservó y qué puede hacer la persona. Una etiqueta anticipa una acción. Un permiso explica recurso, uso, duración y alternativa. Una confirmación especifica efecto y no solo “¿estás seguro?”. Mantener hechos, precios, términos legales e identificadores salvo cambio autorizado.
+An error message describes what happened, what was kept, and what the person can do. A label anticipates an action. A permission explains the resource, use, duration, and alternative. A confirmation specifies the effect, not only “are you sure?”. Keep facts, prices, legal terms, and identifiers unless a change is authorized.
 
-Usar datos y longitudes realistas. Probar plural, cero, cifras grandes, nombres parecidos, direcciones distintas y cadenas traducidas. Separar límite de backend y recomendación de uso. Evitar tono culpabilizante, urgencia ficticia o promesas que la implementación no sostiene.
+Use realistic data and lengths. Test plurals, zero, large numbers, similar names, different text directions, and translated strings. Separate the backend limit from the usage recommendation. Avoid a blaming tone, fake urgency, or promises the implementation cannot keep.
 
-## Movimiento y medios
+## Motion and media
 
-Cada animación tiene un propósito explicable: cambio de estado, continuidad espacial o feedback. No usarla como único canal. Respetar preferencias de movimiento y no impedir cancelar. No aplicar recetas exactas de velocidad o rebote a cualquier contexto. Los formatos y alternativas de medios dependen del contenido y de la tarea, no de una moda.
+Each animation has an explainable purpose: state change, spatial continuity, or feedback. Do not use it as the only channel. Respect motion preferences and do not prevent cancelling. Do not apply exact speed or bounce recipes to any context. Media formats and alternatives depend on the content and the task, not on a trend.
 
-## Prototipo que responde una pregunta
+## A prototype that answers a question
 
-Definir primero la decisión y el estado costoso. Construir el menor artefacto interactivo que los represente: controles funcionales, datos sintéticos claramente señalados, feedback y recuperación. Para comparar, mantener datos y tarea equivalentes. No confundir un flujo de clics previsto con comportamiento humano validado.
+First define the decision and the costly state. Build the smallest interactive artifact that represents them: functional controls, clearly marked synthetic data, feedback, and recovery. To compare, keep data and task equivalent. Do not confuse a planned click flow with validated human behavior.
 
-Un HTML local es apropiado cuando permite explorar alternativas sin infraestructura. No instalar dependencias ni llamar servicios por defecto. Mantenerlo autocontenido y sin telemetría. Validar render, teclado, estados e integridad de archivos antes de presentarlo como funcional; documentar lo que solo se simula.
+A local HTML file is appropriate when it allows exploring alternatives without infrastructure. Do not install dependencies or call services by default. Keep it self-contained and without telemetry. Validate render, keyboard, states, and file integrity before presenting it as functional; document what is only simulated.

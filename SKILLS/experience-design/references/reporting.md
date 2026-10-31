@@ -1,25 +1,25 @@
-# Informes y utilidades
+# Reports and utilities
 
-## Una fuente de verdad
+## One source of truth
 
-Cuando el entregable requiere un informe durable, `report.json` es canónico y sigue `assets/report.schema.json`. Una consulta puntual puede resolverse en chat sin crear archivos. No escribir conclusiones distintas en HTML y Markdown. El helper conserva todos los campos y las limitaciones; una presentación editorial puede ser adicional, no reemplazar el registro.
+When the deliverable requires a durable report, `report.json` is canonical and follows `assets/report.schema.json`. A one-off question can be resolved in chat without creating files. Do not write different conclusions in HTML and Markdown. The helper keeps all fields and limitations; an editorial presentation can be added, but it does not replace the record.
 
-Campos: sesión/autoridad; conclusión; evidencia; cobertura; hallazgos; métricas; decisiones; fuentes adicionales. Cada observación tiene ID. Separar gravedad, confianza, alcance y prueba. Clasificar observación/inferencia/hipótesis. Registrar las fuentes del argumento y los artefactos del producto por separado.
+Fields: session/authority; conclusion; evidence; coverage; findings; metrics; decisions; additional sources. Each observation has an ID. Separate severity, confidence, reach, and test. Classify observation/inference/hypothesis. Record the sources of the argument and the product artifacts separately.
 
-`verified-in-scope` solo expresa la verificación de afirmaciones declaradas en un alcance; no certificación, ausencia global de defectos o eficacia poblacional. No utilizarlo con cobertura desconocida/fallida o riesgos P0/P1 abiertos. Un diseño puede concluir `proposed` y estar correctamente entregado.
+`verified-in-scope` only expresses verification of claims declared within a scope; it is not certification, a global absence of defects, or population effectiveness. Do not use it with unknown/failed coverage or open P0/P1 risks. A design can conclude as `proposed` and be correctly delivered.
 
-## Helper opcional
+## Optional helper
 
-Python 3.10 o superior; solo biblioteca estándar, sin instalaciones, red, subprocesses, telemetría ni llamadas a modelos. Resolver `<skill-root>` a la carpeta instalada real. Ejecutar `python <skill-root>/scripts/ux.py --help` para la interfaz exacta.
+Python 3.10 or later; standard library only, with no installs, network, subprocesses, telemetry, or model calls. Resolve `<skill-root>` to the real installed folder. Run `python <skill-root>/scripts/ux.py --help` for the exact interface.
 
-Comandos: `init` crea un registro desconocido/draft; `lookup` filtra fichas; `validate` comprueba estructura y coherencia; `render` genera JSON/Markdown/HTML desde el registro; `doctor` comprueba datos y enlaces. `init` y `render` exigen directorio de salida nuevo y fuera de la skill; no sobrescriben. Consultar `assets/example-report.json` para un ejemplo sintético y `--help` para argumentos exactos.
+Commands: `init` creates an unknown/draft record; `lookup` filters entries; `validate` checks structure and consistency; `render` generates JSON/Markdown/HTML from the record; `doctor` checks data and links. `init` and `render` require a new output directory outside the skill; they do not overwrite. See `assets/example-report.json` for a synthetic example and `--help` for the exact arguments.
 
-El formato JSON usa fechas YYYY-MM-DD y rechaza claves duplicadas, NaN/Infinity, campos desconocidos y archivos mayores de 5 MiB. El validador implementa únicamente el subconjunto del schema incluido; no se anuncia como validador JSON Schema general. Falla si el schema incorpora keywords no soportadas.
+The JSON format uses YYYY-MM-DD dates and rejects duplicate keys, NaN/Infinity, unknown fields, and files larger than 5 MiB. The validator implements only the subset of the included schema; it is not presented as a general JSON Schema validator. It fails if the schema adds unsupported keywords.
 
-## Límites deliberados
+## Deliberate limits
 
-No comprueba existencia, autenticidad ni contenido de artefactos citados. No analiza si una observación escrita es cierta. No detecta todos los dark patterns ni evalúa un diseño por código. No sustituye inspección humana, pruebas de producto ni la validación canónica del ecosistema. Una referencia declarada correctamente puede seguir siendo falsa: debe inspeccionarse antes de afirmar.
+It does not check the existence, authenticity, or content of cited artifacts. It does not analyze whether a written observation is true. It does not detect every dark pattern or evaluate a design from code. It does not replace human inspection, product tests, or the ecosystem's canonical validation. A correctly declared reference can still be false: inspect it before making a claim.
 
-El helper impide algunas contradicciones comprobables: aprobar cobertura sin evidencia compatible, observación humana basada solo en código o simulación, resultado medido sin muestra/fuente, comparación sin baseline, referencias desconocidas y veredicto verificado con P0/P1 abierto.
+The helper prevents some checkable contradictions: passed coverage without compatible evidence, a human observation based only on code or simulation, a measured result without sample/source, a comparison without baseline, unknown references, and a verified verdict with open P0/P1.
 
-El ejemplo incluido es sintético, con cobertura desconocida y métricas planeadas. No usar sus cifras o hipótesis como hallazgos de un producto.
+The included example is synthetic, with unknown coverage and planned metrics. Do not use its figures or hypotheses as product findings.

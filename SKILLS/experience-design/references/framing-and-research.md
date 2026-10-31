@@ -1,35 +1,35 @@
-# Enmarcar e investigar
+# Framing and research
 
-## Unidad de trabajo
+## Unit of work
 
-Elegir una tarea con un resultado distinguible, no “mejorar la página”. Ejemplo: “Una persona que retoma una edición debe identificar qué cambios están guardados y exportar solo la selección actual”. Esto permite evaluar estado, alcance, errores y recuperación sin rediseñar todo el producto.
+Choose a task with a distinguishable outcome, not “improve the page”. Example: “A person resuming an edit must identify which changes are saved and export only the current selection”. This makes it possible to evaluate state, scope, errors, and recovery without redesigning the whole product.
 
-El brief contiene contexto de uso, conocimiento previo, herramientas, frecuencia, presión, resultado, fallos costosos, límites de autoridad y evidencia disponible. No deducir públicos, competencias o necesidades de accesibilidad de la estética o del stack.
+The brief contains usage context, prior knowledge, tools, frequency, pressure, outcome, costly failures, authority limits, and available evidence. Do not infer audiences, competencies, or accessibility needs from the aesthetics or the stack.
 
-## Elegir evidencia
+## Choose evidence
 
-Una entrevista descubre necesidades, lenguaje y modelos declarados; no prueba por sí sola éxito de tarea. Una prueba observada puede revelar conducta local; no estima automáticamente prevalencia. Analítica muestra eventos instrumentados, no intención ni causas. Tickets de soporte muestran problemas de quienes reportan, no toda la población. Código explica implementación. Capturas prueban estados visuales concretos.
+An interview uncovers needs, language, and stated models; on its own it does not prove task success. An observed test can reveal local behavior; it does not automatically estimate prevalence. Analytics show instrumented events, not intent or causes. Support tickets show the problems of the people who report them, not the whole population. Code explains implementation. Screenshots prove specific visual states.
 
-Triangular cuando las consecuencias lo justifican. Registrar discrepancias en lugar de elegir el dato que favorece la propuesta. Cuando solo hay una captura, limitar el trabajo a lo visible y proponer la inspección que falta. No inventar “usuarios típicos” para rellenar personas.
+Triangulate when the consequences justify it. Record discrepancies instead of choosing the data that favors the proposal. When there is only one screenshot, limit the work to what is visible and propose the missing inspection. Do not invent “typical users” to fill personas.
 
-## Investigación cualitativa mínima útil
+## Minimum useful qualitative research
 
-Definir pregunta, participantes relevantes, consentimiento, tareas neutrales y datos necesarios. Seleccionar diversidad pertinente: primer uso/retorno, entrada, dispositivo, idioma, experiencia y necesidades de acceso. No exigir todas las variantes por rutina.
+Define the question, relevant participants, consent, neutral tasks, and the data needed. Select relevant diversity: first use/return, input, device, language, experience, and access needs. Do not require every variant by routine.
 
-Pedir que la persona intente una tarea plausible con datos realistas. No enseñar de antemano el camino deseado. Registrar ayudas del moderador, desvíos, errores, expectativas y recuperación. Separar citas literales, observaciones y explicación del investigador. No preguntar “¿te resulta más intuitiva esta versión?” como prueba principal.
+Ask the person to attempt a plausible task with realistic data. Do not teach the desired path in advance. Record moderator help, detours, errors, expectations, and recovery. Separate literal quotes, observations, and the researcher's explanation. Do not ask “does this version feel more intuitive to you?” as the main test.
 
-Determinar tamaño y rondas por pregunta, heterogeneidad, riesgos y señal obtenida. Cinco participantes no garantizan descubrir todos los problemas ni estimar una mejora porcentual. Un piloto puede servir para revisar el guion antes de una investigación mayor.
+Determine size and rounds by question, heterogeneity, risks, and the signal obtained. Five participants do not guarantee finding every problem or estimating a percentage improvement. A pilot can serve to revise the script before larger research.
 
-## Métodos específicos
+## Specific methods
 
-Para arquitectura de información: investigar términos y agrupaciones con usuarios del dominio; card sorting genera hipótesis, tree testing comprueba localización en una jerarquía sin confundirla con atractivo visual. Para flujos: walkthrough de la tarea y prueba de uso. Para contenido: pedir interpretar consecuencias y explicar la siguiente acción. Para problemas recurrentes: observar el trabajo en contexto, no solo el recorrido ideal.
+For information architecture: research terms and groupings with domain users; card sorting generates hypotheses, tree testing checks findability in a hierarchy without confusing it with visual appeal. For flows: a task walkthrough and a usability test. For content: ask people to interpret consequences and explain the next action. For recurring problems: observe the work in context, not only the ideal journey.
 
-## Preguntas de decisión
+## Decision questions
 
-Preguntar únicamente cuando falta una respuesta que puede producir soluciones incompatibles: público experto frente a ocasional, pérdida tolerable, autoridad de una automatización, objetivos de negocio en conflicto o restricciones de datos. Agrupar preguntas de alto valor y dar una recomendación con sus supuestos. No usar una grill como ritual de entrada.
+Ask only when an answer is missing that can lead to incompatible solutions: expert versus occasional audience, tolerable loss, authority of an automation, conflicting business goals, or data constraints. Group high-value questions and give a recommendation with its assumptions. Do not use a grill as an entry ritual.
 
-## Sin acceso a personas
+## Without access to people
 
-Hacer inspección experta y diseñar pruebas futuras. Nombrar explícitamente la incertidumbre. Personas sintéticas o un agente que representa a un usuario sirven para generar contraejemplos, no como evidencia de una población real.
+Do an expert inspection and design future tests. Name the uncertainty explicitly. Synthetic personas or an agent that represents a user serve to generate counterexamples, not as evidence of a real population.
 
-Las elecciones metodológicas anteriores son protocolo propuesto de esta skill. Para traducir un objetivo en medición consultar RES-HEART en el registro de fuentes; no atribuirle toda esta metodología ni una garantía de resultados.
+The methodological choices above are this skill's proposed protocol. To translate a goal into measurement, consult RES-HEART in the source registry; do not attribute all this methodology or a guarantee of results to it.

@@ -9,7 +9,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Observaciones de atención en tareas; no demuestra que cualquier señal contextual será detectada."
+      "scope_note": "Observations of attention during tasks; does not show that any contextual signal will be noticed."
     },
     {
       "id": "NN-BANNER",
@@ -19,7 +19,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Hallazgos aplicados de atención; no regla universal sobre la posición de todos los banners."
+      "scope_note": "Applied attention findings; not a universal rule about the position of all banners."
     },
     {
       "id": "NN-CHANGE",
@@ -29,7 +29,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Cambios visibles pueden no percibirse. No sustituye pruebas en el flujo real."
+      "scope_note": "Visible changes may go unnoticed. Does not replace tests in the real flow."
     },
     {
       "id": "NN-LOAD",
@@ -39,7 +39,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Síntesis profesional; distinguir esfuerzo evitable de complejidad necesaria."
+      "scope_note": "Professional synthesis; distinguish avoidable effort from necessary complexity."
     },
     {
       "id": "NN-AESTHETIC",
@@ -49,7 +49,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Usabilidad percibida y tolerancia a problemas menores; no prueba que lo bello resuelva tareas bloqueadas."
+      "scope_note": "Perceived usability and tolerance of minor problems; does not prove that beauty solves blocked tasks."
     },
     {
       "id": "NN-CHUNK",
@@ -59,7 +59,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Agrupación semántica contextual; no cupo fijo de ítems."
+      "scope_note": "Contextual semantic grouping; not a fixed quota of items."
     },
     {
       "id": "NN-EXTERNAL",
@@ -69,7 +69,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Descargar memoria mediante información consultable; no reemplaza un modelo de dominio comprensible."
+      "scope_note": "Offload memory through information the person can consult; does not replace an understandable domain model."
     },
     {
       "id": "NN-MODEL",
@@ -79,7 +79,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Investigar expectativas del usuario; no deducirlas del modelo técnico."
+      "scope_note": "Research user expectations; do not infer them from the technical model."
     },
     {
       "id": "NN-ACTIVE",
@@ -89,7 +89,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Aprendizaje contextual; no presupone que nadie lee documentación."
+      "scope_note": "Contextual learning; does not assume that nobody reads documentation."
     },
     {
       "id": "NN-COMPLEX",
@@ -99,7 +99,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Preservar tareas y experiencia de usuarios expertos."
+      "scope_note": "Preserve the tasks and experience of expert users."
     },
     {
       "id": "NN-CHOICE",
@@ -109,7 +109,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Simplicidad y capacidad deben equilibrarse según la tarea."
+      "scope_note": "Simplicity and capability must be balanced according to the task."
     },
     {
       "id": "NN-PROXIMITY",
@@ -119,7 +119,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Agrupación perceptual; probar que coincida con la relación semántica."
+      "scope_note": "Perceptual grouping; test that it matches the semantic relationship."
     },
     {
       "id": "NN-SIMILARITY",
@@ -129,7 +129,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Apariencia compartida sugiere relaciones, no crea semántica accesible."
+      "scope_note": "Shared appearance suggests relationships; it does not create accessible semantics."
     },
     {
       "id": "NN-REGION",
@@ -139,7 +139,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Contención visual; usar cuando la relación lo amerita, no envolver todo en tarjetas."
+      "scope_note": "Visual containment; use it when the relationship warrants it, do not wrap everything in cards."
     },
     {
       "id": "NN-PEAK",
@@ -149,7 +149,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Recuerdo retrospectivo no equivale a éxito de la tarea completa."
+      "scope_note": "Retrospective memory is not the same as success on the whole task."
     },
     {
       "id": "NN-PARETO",
@@ -159,7 +159,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Priorizar desde datos reales; 80/20 no es una proporción garantizada."
+      "scope_note": "Prioritize from real data; 80/20 is not a guaranteed ratio."
     },
     {
       "id": "NN-LEARNING",
@@ -169,7 +169,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "La práctica importa; no predice curvas de aprendizaje individuales sin medición."
+      "scope_note": "Practice matters; does not predict individual learning curves without measurement."
     },
     {
       "id": "NN-FRAMING",
@@ -179,7 +179,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Aplicar controles también al diseñador y al evaluador, no solo al usuario."
+      "scope_note": "Apply controls to the designer and the evaluator too, not only to the user."
     },
     {
       "id": "CO-WM",
@@ -189,7 +189,7 @@
       "review": "abstract",
       "checked_on": "2026-09-05",
       "publication": "2010",
-      "scope_note": "DOI 10.1177/0963721409359277. Capacidad bajo condiciones de memoria; no límite de navegación."
+      "scope_note": "DOI 10.1177/0963721409359277. Capacity under memory conditions; not a navigation limit."
     },
     {
       "id": "CO-ATT",
@@ -199,7 +199,7 @@
       "review": "metadata-and-abstract",
       "checked_on": "2026-09-05",
       "publication": "2019",
-      "scope_note": "DOI 10.5334/joc.58. PMC6688548 bloqueó acceso directo; no auditoría de toda la revisión."
+      "scope_note": "DOI 10.5334/joc.58. PMC6688548 blocked direct access; not an audit of the whole review."
     },
     {
       "id": "CO-PATTERN",
@@ -209,7 +209,7 @@
       "review": "metadata-only",
       "checked_on": "2026-09-05",
       "publication": "2014",
-      "scope_note": "Acceso directo bloqueado. Referencia amplia, NO evidencia directa de un patrón de interfaz."
+      "scope_note": "Direct access blocked. Broad reference, NOT direct evidence for an interface pattern."
     },
     {
       "id": "CO-ZEIGARNIK",
@@ -219,7 +219,7 @@
       "review": "abstract-and-selected-text",
       "checked_on": "2026-09-05",
       "publication": "2025",
-      "scope_note": "DOI 10.1057/s41599-025-05000-w. Sin ventaja general de recuerdo para tareas inconclusas; tendencia a reanudarlas. Nature redirigió a autenticación."
+      "scope_note": "DOI 10.1057/s41599-025-05000-w. No general recall advantage for unfinished tasks; a tendency to resume them. Nature redirected to authentication."
     },
     {
       "id": "CO-GOAL",
@@ -229,7 +229,7 @@
       "review": "selected-text-and-page-images",
       "checked_on": "2026-09-05",
       "publication": "2006",
-      "scope_note": "Experimentos de recompensas y tareas específicas. Transferencia a cada producto: hipótesis por validar."
+      "scope_note": "Experiments with specific rewards and tasks. Transfer to each product: a hypothesis to validate."
     },
     {
       "id": "CO-CHOICE",
@@ -239,7 +239,7 @@
       "review": "abstract",
       "checked_on": "2026-09-05",
       "publication": "2015",
-      "scope_note": "DOI 10.1016/j.jcps.2014.08.002. Moderadores de complejidad, tarea, preferencias y objetivo."
+      "scope_note": "DOI 10.1016/j.jcps.2014.08.002. Moderators: complexity, task, preferences, and goal."
     },
     {
       "id": "CO-FITTS",
@@ -249,7 +249,7 @@
       "review": "selected-text-and-page-images",
       "checked_on": "2026-09-05",
       "publication": "1954 / 1992",
-      "scope_note": "Trabajo de 1954, reimpresión de 1992. Modelo de movimiento bajo condiciones; no calcula todo el tiempo de decisión."
+      "scope_note": "1954 work, 1992 reprint. A movement model under conditions; does not compute all decision time."
     },
     {
       "id": "CO-HICK",
@@ -259,7 +259,7 @@
       "review": "abstract",
       "checked_on": "2026-09-05",
       "publication": "1952",
-      "scope_note": "DOI 10.1080/17470215208416600. Elección estímulo–respuesta; no regla para cortar todo menú."
+      "scope_note": "DOI 10.1080/17470215208416600. Stimulus–response choice; not a rule for cutting every menu."
     },
     {
       "id": "CO-HICK-REVIEW",
@@ -269,7 +269,7 @@
       "review": "selected-text-and-page-images",
       "checked_on": "2026-09-05",
       "publication": "2018",
-      "scope_note": "DOI 10.1080/17470218.2017.1322622. Práctica, compatibilidad y dependencias secuenciales importan."
+      "scope_note": "DOI 10.1080/17470218.2017.1322622. Practice, compatibility, and sequential dependencies matter."
     },
     {
       "id": "CO-SERIAL",
@@ -279,7 +279,7 @@
       "review": "metadata-only",
       "checked_on": "2026-09-05",
       "publication": "1962",
-      "scope_note": "DOI 10.1037/h0045106. Trabajo clásico de recuerdo libre; acceso íntegro no revisado aquí."
+      "scope_note": "DOI 10.1037/h0045106. Classic free-recall work; full access not reviewed here."
     },
     {
       "id": "UX-TESLER",
@@ -289,7 +289,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": "2024",
-      "scope_note": "Ensayo profesional. Heurística de distribución de complejidad, no conservación física."
+      "scope_note": "Professional essay. A heuristic for distributing complexity, not physical conservation."
     },
     {
       "id": "UX-FAMILIAR",
@@ -299,7 +299,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": "2024",
-      "scope_note": "Convenciones como punto de partida; no mandato de uniformidad estética."
+      "scope_note": "Conventions as a starting point; not a mandate for aesthetic uniformity."
     },
     {
       "id": "UX-ISOLATION",
@@ -309,7 +309,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Síntesis de diseño. La aplicación a CTA y atención se trata como hipótesis, no incremento garantizado."
+      "scope_note": "Design synthesis. Application to CTAs and attention is treated as a hypothesis, not a guaranteed increase."
     },
     {
       "id": "UX-FLOW",
@@ -319,7 +319,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": "2007",
-      "scope_note": "Ensayo de diseño, no estudio experimental que valide una interfaz concreta."
+      "scope_note": "Design essay, not an experimental study that validates a specific interface."
     },
     {
       "id": "W3-WCAG22",
@@ -329,7 +329,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Recomendación vigente consultada. Auditar criterios aplicables completos; no certificación por checklist."
+      "scope_note": "Current Recommendation consulted. Audit the complete applicable criteria; no certification by checklist."
     },
     {
       "id": "W3-TARGET",
@@ -339,7 +339,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "24×24 CSS px o excepciones incluidas separación; no confundir con 44×44 de Enhanced AAA."
+      "scope_note": "24×24 CSS px or exceptions, including spacing; do not confuse with the 44×44 of Enhanced AAA."
     },
     {
       "id": "W3-FOCUS",
@@ -349,7 +349,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "AA: no totalmente oculto por contenido del autor. Requisitos mejorados son distintos."
+      "scope_note": "AA: not fully hidden by author content. Enhanced requirements are different."
     },
     {
       "id": "W3-COGA",
@@ -359,7 +359,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": "2021",
-      "scope_note": "Orientación complementaria. No es un requisito adicional de conformidad WCAG."
+      "scope_note": "Complementary guidance. Not an additional WCAG conformance requirement."
     },
     {
       "id": "W3-WCAG3",
@@ -369,7 +369,7 @@
       "review": "selected-text",
       "checked_on": "2026-10-27",
       "publication": "2026-09",
-      "scope_note": "W3C publicó nuevos borradores en septiembre de 2026. Siguen incompletos y no reemplazan WCAG 2; no prometer vigencia normativa en 2027."
+      "scope_note": "W3C published new drafts in September 2026. They are still incomplete and do not replace WCAG 2; do not promise normative status in 2027."
     },
     {
       "id": "AI-HAX",
@@ -379,7 +379,7 @@
       "review": "abstract-and-selected-text",
       "checked_on": "2026-09-05",
       "publication": "2019",
-      "scope_note": "18 pautas; evaluadas con profesionales y productos con IA, no validación universal de agentes generativos."
+      "scope_note": "18 guidelines; evaluated with practitioners and AI products, not a universal validation of generative agents."
     },
     {
       "id": "AI-PAIR",
@@ -389,7 +389,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Guía del proveedor sobre fallos, límites y caminos de recuperación."
+      "scope_note": "Vendor guidance on failures, limits, and recovery paths."
     },
     {
       "id": "AI-FORCING",
@@ -399,7 +399,7 @@
       "review": "abstract",
       "checked_on": "2026-09-05",
       "publication": "2021",
-      "scope_note": "Menor sobredependencia bajo intervenciones concretas, con costes subjetivos y diferencias entre personas."
+      "scope_note": "Less overreliance under specific interventions, with subjective costs and differences between people."
     },
     {
       "id": "AI-RELIANCE",
@@ -409,7 +409,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Elegir mitigaciones según usuario, tarea y riesgo; la explicación sola no garantiza confianza calibrada."
+      "scope_note": "Choose mitigations by user, task, and risk; explanation alone does not guarantee calibrated trust."
     },
     {
       "id": "PERF-INP",
@@ -419,7 +419,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "INP bueno ≤200 ms al percentil 75 de visitas; no mide la finalización de un trabajo remoto."
+      "scope_note": "Good INP ≤200 ms at the 75th percentile of visits; does not measure the completion of remote work."
     },
     {
       "id": "PERF-VITALS",
@@ -429,7 +429,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "LCP, INP y CLS son métricas web; no equivalen a experiencia humana global."
+      "scope_note": "LCP, INP, and CLS are web metrics; they are not equivalent to the overall human experience."
     },
     {
       "id": "RES-HEART",
@@ -439,7 +439,7 @@
       "review": "abstract",
       "checked_on": "2026-09-05",
       "publication": "2010",
-      "scope_note": "HEART y objetivo–señal–métrica. No exige medir todas las categorías en cada caso."
+      "scope_note": "HEART and goal–signal–metric. Does not require measuring every category in every case."
     },
     {
       "id": "SYS-TOKENS",
@@ -449,7 +449,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": "2025-10",
-      "scope_note": "Formato del Community Group; no W3C Recommendation. Validar soporte real de herramientas."
+      "scope_note": "Community Group format; not a W3C Recommendation. Validate real tool support."
     },
     {
       "id": "SYS-POSTEL",
@@ -459,7 +459,7 @@
       "review": "abstract-and-selected-text",
       "checked_on": "2026-09-05",
       "publication": "2023-06",
-      "scope_note": "Crítica a permisividad ambigua en protocolos. Aplicación a formularios es analogía explícita."
+      "scope_note": "Critique of ambiguous permissiveness in protocols. Application to forms is an explicit analogy."
     },
     {
       "id": "SYS-SKILLS",
@@ -469,7 +469,7 @@
       "review": "selected-text",
       "checked_on": "2026-09-05",
       "publication": null,
-      "scope_note": "Formato SKILL.md y recursos locales; compatibilidad de clientes debe verificarse."
+      "scope_note": "SKILL.md format and local resources; client compatibility must be verified."
     }
   ]
 }

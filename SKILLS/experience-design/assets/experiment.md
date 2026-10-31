@@ -1,20 +1,20 @@
-# Protocolo de prueba
+# Test protocol
 
-ID / pregunta:
-Hipótesis y alternativa:
-Participantes o población pertinente:
-Consentimiento, datos mínimos y retención:
-Unidad de análisis:
-Baseline y variante:
-Tareas neutrales y datos:
-Método, orden y control de aprendizaje:
-Métrica principal y definición:
-Guardrails de errores, pérdida, acceso y autonomía:
-Plan de muestra o precisión (justificado; no cifra ritual):
-Criterio y momento de decisión:
-Qué contaría como resultado negativo:
-Ayudas, exclusiones y desviaciones:
-Registro de resultados y artefactos:
-Límites y siguiente revisión:
+ID / question:
+Hypothesis and alternative:
+Participants or relevant population:
+Consent, minimal data, and retention:
+Unit of analysis:
+Baseline and variant:
+Neutral tasks and data:
+Method, order, and learning control:
+Primary metric and definition:
+Guardrails for errors, loss, access, and autonomy:
+Sample or precision plan (justified; not a ritual number):
+Decision criterion and timing:
+What would count as a negative result:
+Help, exclusions, and deviations:
+Results and artifact log:
+Limits and next review:
 
-No completar resultados antes de ejecutar. Una simulación no es investigación con personas.
+Do not fill in results before running the test. A simulation is not research with people.

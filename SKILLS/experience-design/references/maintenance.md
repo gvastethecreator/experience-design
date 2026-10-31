@@ -1,27 +1,27 @@
-# Mantenimiento y horizonte 2026–2027
+# Maintenance and the 2026–2027 horizon
 
-## Estabilidad por capas
+## Stability by layers
 
-Mantener el proceso y los contratos separados de estándares, proveedores y ejemplos. Una ficha conserva ID; su texto, fuente y condición de aplicación pueden cambiar con evidencia. No presentar “2027” como garantía sobre tecnología futura.
+Keep the process and contracts separate from standards, vendors, and examples. An entry keeps its ID; its text, source, and application condition can change with evidence. Do not present “2027” as a guarantee about future technology.
 
-Antes de una decisión dependiente de norma, formato, cliente o capacidad, consultar fuente oficial vigente y fechar el resultado. Cuando no haya red, informar fecha y alcance de lo disponible. Un artículo antiguo puede seguir siendo útil; uno nuevo no adquiere rigor por su fecha.
+Before a decision that depends on a standard, format, client, or capability, consult the current official source and date the result. When there is no network, report the date and scope of what is available. An old article can still be useful; a new one does not gain rigor because of its date.
 
-W3-WCAG22 es la referencia normativa web consultada. W3-WCAG3 sigue como observación, no gate de conformidad. SYS-TOKENS es especificación de Community Group, no W3C Recommendation. SYS-SKILLS describe formato; políticas de activación varían por cliente y se configuran en adaptadores, no con campos inventados en el núcleo.
+W3-WCAG22 is the consulted web normative reference. W3-WCAG3 stays under watch, not a conformance gate. SYS-TOKENS is a Community Group specification, not a W3C Recommendation. SYS-SKILLS describes the format; activation policies vary by client and are configured in adapters, not with invented fields in the core.
 
-## Revisar cuando cambia algo material
+## Review when something material changes
 
-Revisar la ficha al aparecer evidencia contradictoria; el contrato de IA al cambiar acciones/permisos; la accesibilidad al cambiar estados o modalidades; el rendimiento al cambiar recorrido o arquitectura; routing cuando cambia un dueño. Hacer una revisión periódica de normas y adaptadores como práctica de mantenimiento, no como actualización automática prometida.
+Review the entry when contradictory evidence appears; the AI contract when actions/permissions change; accessibility when states or modalities change; performance when the journey or architecture changes; routing when an owner changes. Do a periodic review of standards and adapters as a maintenance practice, not as a promised automatic update.
 
-Un enlace roto es una limitación de acceso, no refutación de la idea. Buscar una copia legítima o un trabajo original y conservar procedencia. No eludir paywalls, inventar contenido ni sustituir estudios por resúmenes comerciales sin etiqueta.
+A broken link is an access limitation, not a refutation of the idea. Look for a legitimate copy or the original work and keep provenance. Do not bypass paywalls, invent content, or replace studies with unlabeled commercial summaries.
 
-## Evaluación antes de promover
+## Evaluation before promotion
 
-El candidato configura activación explícita en el adaptador incluido para evitar conflictos con skills vecinas. `trigger_queries.json` contiene casos de **elegibilidad de routing**, no prueba de invocación natural con esa política desactivada. Antes de habilitar implícita, probar lectura real de SKILL.md con prompts no inducidos en un cliente compatible.
+The candidate configures explicit activation in the included adapter to avoid conflicts with neighboring skills. `trigger_queries.json` contains **routing eligibility** cases, not proof of natural invocation with that policy disabled. Before enabling implicit invocation, test a real read of SKILL.md with non-leading prompts in a compatible client.
 
-Comparar baseline sin skill y candidato usando inputs idénticos en contexto limpio. Separar casos de desarrollo y holdout. No entrenar a la redacción exacta de los prompts. Observar corrección, utilidad, sobrealcance, evidencia, coste y regresiones. Conservar resultados negativos y opiniones de usuarios reales.
+Compare a baseline without the skill against the candidate using identical inputs in a clean context. Separate development and holdout cases. Do not train to the exact wording of the prompts. Observe correctness, usefulness, overreach, evidence, cost, and regressions. Keep negative results and feedback from real users.
 
-La revisión estructural, los tests del helper y el smoke de HTML pueden estar aprobados mientras la eficacia cognitiva sigue no medida. No convertir `candidate` en “definitiva” por haber generado archivos.
+The structural review, the helper tests, and the HTML smoke test can pass while cognitive effectiveness remains unmeasured. Do not turn `candidate` into “final” just because files were generated.
 
-## Publicación
+## Publication
 
-La distribución instalable es la carpeta de la skill, autocontenida. Mantener investigación histórica, materiales de construcción y auditorías del ecosistema fuera de ella. No incluir secretos, cachés de plugins o contenidos ajenos íntegros. Decidir licencia y repositorio canónico con el propietario antes de publicar.
+The installable distribution is the skill folder, self-contained. Keep historical research, build materials, and ecosystem audits outside it. Do not include secrets, plugin caches, or complete third-party content. Decide the license and the canonical repository with the owner before publishing.

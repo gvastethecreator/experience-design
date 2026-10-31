@@ -1,25 +1,25 @@
-# Integración opcional por capacidad
+# Optional integration by capability
 
-La skill funciona sin otras skills instaladas. Primero inspeccionar disponibilidad y contrato vigente; nunca asumir una ruta local, un cliente, una herramienta o un permiso. Cargar solo la capacidad que falta. Conservar una única decisión, alcance y evidencia compartidos.
+The skill works without other skills installed. First inspect availability and the current contract; never assume a local path, a client, a tool, or a permission. Load only the missing capability. Keep one shared decision, scope, and evidence.
 
-- `improve-user-experience`: ejecutar pequeñas mejoras **aditivas** basadas en fricción observada. No pasarle un rediseño sistémico como si fuera micro-mejora.
-- `improve-ui`: implementación o verificación de una interfaz web existente dentro de su dirección y alcance. La investigación upstream y el resultado de usuario siguen aquí.
-- `ruthless-designer`: dirección visual nueva o rediseño amplio. Transferir tarea, restricciones y criterios de prueba; no reiniciar desde preferencias genéricas.
-- `prototype-lab`: variantes visuales comparables y artefactos de navegador portables. Seleccionar su ruta vigente `picker`, `quick`, `compare` o `ship`; consultar `--help` en lugar de copiar comandos antiguos.
-- `html-lab`: prototipo desechable de lógica/estados cuando ese sea el contrato disponible, no distribución de una galería de producto.
-- `better-accessibility`, `better-layout`, `better-typography`, `better-ui`, `color-expert`: resolver un dominio especializado que el alcance requiera. No encadenarlos todos por defecto.
-- `brainstormer`, cuando esté disponible: ideas de **nuevas capacidades**, no sustituto del diagnóstico de una tarea actual. Una idea guardada no autoriza implementación.
-- `agent-ready-this`, cuando esté disponible: preparación del repositorio y selección de interfaces para agentes.
-- `web-agent-ready`, cuando esté disponible: herramientas dentro de una página abierta, registro, permisos y ciclo de vida. Ninguna de estas skills certifica comprensión o control humano de la delegación.
+- `improve-user-experience`: run small **additive** improvements based on observed friction. Do not hand it a systemic redesign as if it were a micro-improvement.
+- `improve-ui`: implementation or verification of an existing web interface within its direction and scope. Upstream research and the user outcome stay here.
+- `ruthless-designer`: new visual direction or broad redesign. Transfer the task, constraints, and test criteria; do not restart from generic preferences.
+- `prototype-lab`: comparable visual variants and portable browser artifacts. Select its current route `picker`, `quick`, `compare`, or `ship`; check `--help` instead of copying old commands.
+- `html-lab`: throwaway prototype of logic/states when that is the available contract, not distribution of a product gallery.
+- `better-accessibility`, `better-layout`, `better-typography`, `better-ui`, `color-expert`: solve a specialized domain that the scope requires. Do not chain all of them by default.
+- `brainstormer`, when available: ideas for **new capabilities**, not a substitute for diagnosing a current task. A saved idea does not authorize implementation.
+- `agent-ready-this`, when available: repository preparation and interface selection for agents.
+- `web-agent-ready`, when available: tools inside an open page, registration, permissions, and lifecycle. None of these skills certifies human understanding or control of the delegation.
 
-En native/game/3D usar el dueño de la plataforma para implementación. La skill puede formular investigación y contratos de interacción sin fingir especialización de cada renderer.
+In native/game/3D, use the platform owner for implementation. The skill can formulate research and interaction contracts without pretending to specialize in each renderer.
 
-## Handoff mínimo
+## Minimum handoff
 
-Pasar modo y autoridad, tarea, contexto, estado actual, evidencia reutilizable, decisión, requisitos a preservar, riesgos, criterios y prueba pendiente. El especialista devuelve cambios y evidencia dentro del mismo alcance. No duplicar tickets, informes o aprobación. Elegir diseño no implica publicar.
+Pass mode and authority, task, context, current state, reusable evidence, decision, requirements to preserve, risks, criteria, and pending test. The specialist returns changes and evidence within the same scope. Do not duplicate tickets, reports, or approval. Choosing a design does not imply publishing it.
 
-## Propiedad
+## Ownership
 
-Para ecosistemas con repos canónicos y enlaces, editar solo el dueño canónico. No copiar payload dentro de una matriz que lo declara externo. Un adaptador puede apuntar a esta skill, pero no debe cargarla para corregir un radio de borde o cambiar un icono.
+For ecosystems with canonical repos and links, edit only the canonical owner. Do not copy payload into a matrix that declares it external. An adapter can point to this skill, but must not load it to fix a border radius or change an icon.
 
-Este routing se derivó de entrypoints remotos consultados el 2026-09-05. No prueba la versión instalada en un equipo; respetar manifest y commit local efectivos.
+This routing was derived from remote entrypoints consulted on 2026-09-05. It does not prove the version installed on a machine; respect the effective local manifest and commit.

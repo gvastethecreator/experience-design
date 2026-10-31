@@ -1,29 +1,29 @@
-# Contrato inclusivo
+# Inclusive contract
 
-## Normativa y alcance
+## Standards and scope
 
-Base web de referencia consultada el 2026-09-05: WCAG 2.2. Identificar nivel y criterios aplicables desde W3-WCAG22; estos apuntes no sustituyen el texto normativo ni constituyen auditoría completa. El nivel legal exigible depende del producto y la jurisdicción; verificarlo específicamente cuando sea necesario.
+Web reference baseline consulted on 2026-09-05: WCAG 2.2. Identify the applicable level and criteria from W3-WCAG22; these notes do not replace the normative text and are not a complete audit. The legally required level depends on the product and the jurisdiction; verify it specifically when needed.
 
-Distinguir 2.5.8 AA (24×24 CSS px o sus excepciones, incluida separación) de 2.5.5 AAA (44×44 y excepciones). 2.4.11 AA evita foco totalmente oculto; no confundirlo con requisitos mejorados. 2.5.7 AA necesita alternativa de puntero sin arrastre cuando corresponde: **un atajo de teclado por sí solo no basta para ese criterio**. Ver W3-TARGET, W3-FOCUS y el estándar.
+Distinguish 2.5.8 AA (24×24 CSS px or its exceptions, including spacing) from 2.5.5 AAA (44×44 and exceptions). 2.4.11 AA prevents fully hidden focus; do not confuse it with enhanced requirements. 2.5.7 AA requires a pointer alternative without dragging where applicable: **a keyboard shortcut alone is not enough for that criterion**. See W3-TARGET, W3-FOCUS, and the standard.
 
-Autenticación, entrada redundante y ayuda consistente merecen revisión específica. No bloquear pegar contraseñas o usar gestores sin una razón y alternativa conformes. Verificar el texto y las excepciones del criterio relevante.
+Authentication, redundant entry, and consistent help need a specific review. Do not block pasting passwords or using password managers without a conforming reason and alternative. Verify the text and exceptions of the relevant criterion.
 
-## Pruebas por tarea
+## Tests per task
 
-Comprobar nombre, rol, estado y relaciones semánticas; orden y restauración de foco; uso sin ratón; foco visible; errores identificados; alternativas a gestos; lectura y zoom/reflow pertinentes. Revisar contenido dinámico y anuncios de estado sin interrumpir innecesariamente. No confundir orden visual con orden accesible.
+Check name, role, state, and semantic relationships; focus order and restoration; use without a mouse; visible focus; identified errors; alternatives to gestures; relevant reading and zoom/reflow. Review dynamic content and status announcements without interrupting unnecessarily. Do not confuse visual order with accessible order.
 
-Un escáner aporta hallazgos acotados, no una declaración de conformidad. Realizar comprobaciones manuales en estados relevantes. Si no se usa lector de pantalla, declarar esa limitación. No simular su resultado a partir de atributos ARIA. Preferir HTML nativo adecuado antes de añadir semántica redundante.
+A scanner provides bounded findings, not a conformance statement. Run manual checks in relevant states. If no screen reader is used, state that limitation. Do not simulate its result from ARIA attributes. Prefer suitable native HTML before adding redundant semantics.
 
-## Contextos de acceso
+## Access contexts
 
-Datos largos, RTL, aumento de texto, contraste, modo de alto contraste, movimiento reducido, teclado, tacto, asistencia y red lenta se incorporan según público, comportamiento cambiado y riesgo. No exigir toda combinación cartesiana para una corrección mínima ni omitir una modalidad central por conveniencia.
+Long data, RTL, text enlargement, contrast, high-contrast mode, reduced motion, keyboard, touch, assistive technology, and slow network are included according to audience, changed behavior, and risk. Do not require every Cartesian combination for a minimal fix, and do not omit a core modality for convenience.
 
-En canvas, visualizaciones, juegos o editores, no asumir que la representación gráfica es suficiente: definir qué tareas necesitan una alternativa estructurada y cómo se sincronizan selección, nombre y estado. En audio/video o voz, contemplar alternativas adecuadas a la información y operación.
+In canvas, visualizations, games, or editors, do not assume that the graphic representation is enough: define which tasks need a structured alternative and how selection, name, and state stay in sync. In audio/video or voice, plan alternatives suited to the information and the operation.
 
-## Cognición
+## Cognition
 
-W3-COGA aporta orientación complementaria sobre comprensión y uso; es una nota de grupo, no una certificación WCAG. Aplicar lenguaje claro, conservación de contexto, ayuda y recuperación como hipótesis verificables. Incluir a personas pertinentes en la investigación; no construir una “persona discapacitada” sintética como sustituto.
+W3-COGA provides complementary guidance on understanding and use; it is a group note, not a WCAG certification. Apply clear language, context preservation, help, and recovery as verifiable hypotheses. Include relevant people in the research; do not build a synthetic “disabled persona” as a substitute.
 
-## Horizonte
+## Horizon
 
-WCAG 3 sigue siendo borrador incompleto según W3-WCAG3. Mantenerlo en observación; no marcar sus propuestas como obligaciones vigentes ni prometer un calendario para 2027. Fechar las consultas y registrar cambios que afecten a pruebas o contratos.
+WCAG 3 is still an incomplete draft according to W3-WCAG3. Keep it under watch; do not mark its proposals as current obligations or promise a timeline for 2027. Date each consultation and record changes that affect tests or contracts.

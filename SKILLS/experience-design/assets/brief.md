@@ -1,15 +1,15 @@
-# Contrato de experiencia
+# Experience contract
 
-Modo y autoridad:
-Proyecto / recorrido:
-Pregunta de diseño:
-Persona o rol y evidencia de ese contexto:
-Tarea y resultado correcto:
-Información y método de entrada:
-Riesgo y fallo costoso:
-Capacidades / datos / identidad que preservar:
-Evidencia disponible y límites:
-Supuestos reversibles:
-Decisiones que requieren respuesta:
-Criterio de decisión y prueba:
-No incluido:
+Mode and authority:
+Project / journey:
+Design question:
+Person or role and evidence for that context:
+Task and correct outcome:
+Information and input method:
+Risk and costly failure:
+Capabilities / data / identity to preserve:
+Available evidence and limits:
+Reversible assumptions:
+Decisions that need an answer:
+Decision criterion and test:
+Not included:

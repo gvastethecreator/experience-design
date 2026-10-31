@@ -1,31 +1,31 @@
-# Validación de UX y medición
+# UX validation and measurement
 
-## Elegir el nivel correcto
+## Choose the right level
 
-**Código:** prueba de implementación o regla estática. **Navegador:** controles y transiciones ejecutados en un entorno. **Render:** apariencia en viewport/estado declarados. **Participantes:** comprensión y conducta observada en muestra descrita. **Analítica/experimento:** métricas instrumentadas con diseño de comparación explícito.
+**Code:** implementation test or static rule. **Browser:** controls and transitions executed in an environment. **Render:** appearance in a declared viewport/state. **Participants:** understanding and observed behavior in a described sample. **Analytics/experiment:** instrumented metrics with an explicit comparison design.
 
-Ninguno absorbe automáticamente a los demás. Un test Playwright que recorre un flujo no demuestra que una persona lo descubrirá. Una preferencia estética no prueba productividad. Un error observado no justifica extrapolar prevalencia a toda la población.
+None automatically absorbs the others. A Playwright test that walks through a flow does not prove that a person will discover it. An aesthetic preference does not prove productivity. One observed error does not justify extrapolating prevalence to the whole population.
 
-## Objetivo, señal, métrica
+## Goal, signal, metric
 
-Usar RES-HEART para orientar la elección, no para obligar a medir todas sus dimensiones. Ejemplo propio: objetivo “exportar la selección correcta”; señal “archivo corresponde a elementos elegidos”; métrica “proporción de tareas completadas sin exportación incorrecta”. Añadir guardrail de pérdida de trabajo y medida de confianza/comprensión cuando sea pertinente.
+Use RES-HEART to guide the choice, not to force measuring all its dimensions. Our own example: goal “export the correct selection”; signal “the file matches the chosen items”; metric “share of tasks completed without an incorrect export”. Add a work-loss guardrail and a confidence/understanding measure when relevant.
 
-Preferir métricas de resultado: tarea correcta, errores, ayudas, abandono justificado, recuperación, tiempo hasta valor y esfuerzo percibido. Retorno o conversión pueden ser relevantes, pero no deben premiar compulsión, ocultación de costes o consentimiento defectuoso. Menos clics no es éxito si aumenta errores.
+Prefer outcome metrics: correct task, errors, help, justified abandonment, recovery, time to value, and perceived effort. Return or conversion can be relevant, but they must not reward compulsion, hidden costs, or defective consent. Fewer clicks is not success if errors increase.
 
-## Protocolo de comparación
+## Comparison protocol
 
-Fijar pregunta, población, unidad de análisis, baseline, variantes, método, variable principal, guardrails y criterio de decisión antes de observar resultados. Mantener tarea y datos equivalentes. Contrabalancear orden cuando el aprendizaje importe. Registrar exclusiones, fallos, ayuda y condiciones del dispositivo.
+Fix the question, population, unit of analysis, baseline, variants, method, primary variable, guardrails, and decision criterion before observing results. Keep the task and data equivalent. Counterbalance the order when learning matters. Record exclusions, failures, help, and device conditions.
 
-Un A/B necesita instrumentación fiable, asignación apropiada y planificación de muestra/precisión según efecto de interés y tráfico. No inventar tamaño universal. Evitar detener al primer resultado favorable. Si no hay evidencia suficiente, informar incertidumbre; “no significativo” no equivale a “son iguales”.
+An A/B test needs reliable instrumentation, appropriate assignment, and sample/precision planning according to the effect of interest and the traffic. Do not invent a universal size. Avoid stopping at the first favorable result. If there is not enough evidence, report the uncertainty; “not significant” does not mean “they are equal”.
 
-Sin tráfico o presupuesto, una prueba cualitativa puede resolver ambigüedades y detectar daños. No convertirla en un porcentaje de mejora comercial. Si faltan participantes, dejar protocolo preparado y resultado sin medir.
+Without traffic or budget, a qualitative test can resolve ambiguities and detect harm. Do not turn it into a commercial improvement percentage. If participants are missing, leave the protocol prepared and the result unmeasured.
 
-## Experiencia de IA
+## AI experience
 
-Medir no solo aceptación, sino aceptación incorrecta, correcciones, capacidad de detectar límites y recuperación del control. Segmentar por conocimiento y riesgo cuando proceda. Una IA más convincente puede aumentar satisfacción mientras empeora decisiones; verificar ambas cosas.
+Measure not only acceptance but also incorrect acceptance, corrections, the ability to detect limits, and recovery of control. Segment by knowledge and risk when appropriate. A more convincing AI can increase satisfaction while worsening decisions; verify both.
 
-## Pruebas de la propia skill
+## Tests of the skill itself
 
-Distinguir tres preguntas: ¿se activa donde corresponde?, ¿sigue un buen proceso?, ¿mejora resultados a coste razonable? Fixtures estáticos solo describen casos. Para eficacia, comparar mismo modelo/configuración/tarea/permisos, con y sin skill, en contextos limpios. Conservar outputs y rastros; evaluar sin mostrar al juez cuál es candidato. No incluir respuestas esperadas en el contexto del ejecutor.
+Distinguish three questions: does it activate where it should? Does it follow a good process? Does it improve results at a reasonable cost? Static fixtures only describe cases. For effectiveness, compare the same model/configuration/task/permissions, with and without the skill, in clean contexts. Keep outputs and traces; evaluate without showing the judge which one is the candidate. Do not include expected answers in the executor's context.
 
-Usar casos centrales, variaciones, límites y holdout. Registrar calidad, errores, alcance indebido, tiempo, tokens y utilidad humana. Una ganancia que triplica coste es un tradeoff, no un éxito gratuito. No declarar mejora hasta correr esa comparación. Ver el protocolo de mantenimiento y `evals/evals.json`.
+Use core cases, variations, edge cases, and holdout. Record quality, errors, undue scope, time, tokens, and human usefulness. A gain that triples the cost is a tradeoff, not a free success. Do not declare an improvement until that comparison runs. See the maintenance protocol and `evals/evals.json`.

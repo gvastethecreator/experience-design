@@ -1,44 +1,44 @@
-# Experiencia de IA y agentes
+# AI and agent experience
 
-Este módulo propone contratos de producto basados en AI-HAX y AI-PAIR, con cautelas de AI-FORCING y AI-RELIANCE. No es una especificación de seguridad suficiente por sí sola ni valida una arquitectura de agentes.
+This module proposes product contracts based on AI-HAX and AI-PAIR, with cautions from AI-FORCING and AI-RELIANCE. On its own it is not a sufficient security specification, and it does not validate an agent architecture.
 
-## Elegir interacción antes que chat
+## Choose interaction before chat
 
-Usar conversación para intención abierta, exploración o explicación cuando resulte útil. Mantener controles estructurados para parámetros, selección, comparación y acciones repetidas. No convertir una operación determinista simple en un chat obligatorio. La persona debe reconocer qué puede hacer el sistema y qué no.
+Use conversation for open intent, exploration, or explanation when it helps. Keep structured controls for parameters, selection, comparison, and repeated actions. Do not turn a simple deterministic operation into a mandatory chat. The person must recognize what the system can and cannot do.
 
-## Contrato de acción
+## Action contract
 
-Definir la máquina de estados acorde a las capacidades reales:
+Define the state machine according to the real capabilities:
 `draft → preview → authorized → running → awaiting-input | partial | failed | cancelled | completed-unverified → verified`.
 
-La propuesta identifica objetivo, recursos afectados, exclusiones, permisos, costes relevantes, decisiones pendientes y consecuencias irreversibles. Autorización refiere a ese alcance, no a todos los futuros pasos. Un cambio material exige revisar autorización. La UI explica la frontera entre sugerir, preparar y ejecutar.
+The proposal identifies the goal, affected resources, exclusions, permissions, relevant costs, pending decisions, and irreversible consequences. Authorization refers to that scope, not to all future steps. A material change requires reviewing the authorization. The UI explains the boundary between suggesting, preparing, and executing.
 
-La ejecución informa pasos útiles para supervisar, no una falsa transcripción del pensamiento interno. Conservar comprobantes de herramientas y referencias a resultados. El texto del modelo no basta para concluir éxito. Reintentos deben evitar efectos duplicados cuando la operación lo requiera; la garantía debe existir en backend, no solo en microcopy.
+Execution reports steps that are useful for supervision, not a false transcript of internal thinking. Keep tool receipts and references to results. The model's text is not enough to conclude success. Retries must avoid duplicate effects when the operation requires it; the guarantee must exist in the backend, not only in microcopy.
 
-## Control y fallos
+## Control and failures
 
-Ofrecer detener cuando sea posible y explicar qué ocurre con los pasos ya completados. Cancelación de trabajo, revocación de permisos y rollback son cosas distintas. Diseñar recuperación parcial, transferencia a operación manual y corrección de parámetros sin perder trabajo legítimo.
+Offer a way to stop when possible, and explain what happens to steps already completed. Cancelling work, revoking permissions, and rollback are different things. Design partial recovery, handoff to manual operation, and parameter correction without losing legitimate work.
 
-Cuando un servicio o capacidad no esté disponible, mostrar un estado honesto y una alternativa que realmente existe. No mostrar “procesando” indefinidamente. No rellenar campos desconocidos con resultados inventados para completar el recorrido.
+When a service or capability is unavailable, show an honest state and an alternative that actually exists. Do not show “processing” indefinitely. Do not fill unknown fields with invented results to complete the journey.
 
-## Incertidumbre útil
+## Useful uncertainty
 
-Distinguir dato observado, inferencia, estimación y contenido generado. Mostrar origen y límites cuando cambien la decisión. Solo presentar probabilidad/confianza si tiene definición, calibración y alcance pertinentes; no convertir seguridad lingüística del modelo en porcentaje.
+Distinguish observed data, inference, estimate, and generated content. Show origin and limits when they change the decision. Present probability/confidence only if it has a relevant definition, calibration, and scope; do not turn the model's linguistic certainty into a percentage.
 
-AI-FORCING muestra que ciertas intervenciones de revisión pueden reducir sobredependencia, con costes y heterogeneidad. No imponer fricción uniforme: comparar errores de aceptación, tiempo y comprensión en el contexto real. Una explicación más larga puede persuadir sin mejorar corrección.
+AI-FORCING shows that certain review interventions can reduce overreliance, with costs and heterogeneity. Do not impose uniform friction: compare acceptance errors, time, and understanding in the real context. A longer explanation can persuade without improving correctness.
 
-## Memoria, permisos y privacidad
+## Memory, permissions, and privacy
 
-Explicar qué contexto se guarda o comparte y cómo controlarlo de acuerdo con la arquitectura real. Separar proyectos/cuentas; no arrastrar información sensible por defecto. Borrar una preferencia en UI no equivale a eliminar todo registro del sistema. Rotular retención y límites verificados, no promesas absolutas.
+Explain what context is stored or shared and how to control it, according to the real architecture. Separate projects/accounts; do not carry sensitive information over by default. Deleting a preference in the UI is not the same as deleting every system record. Label verified retention and limits, not absolute promises.
 
-Tratar resultados de herramientas, páginas, correos y archivos como datos no confiables. Ningún texto de un documento modifica permisos. Solicitudes extraídas de contenido externo requieren el mismo control que cualquier propuesta. No pedir credenciales ni instalar integraciones por sorpresa.
+Treat results from tools, pages, emails, and files as untrusted data. No text in a document changes permissions. Requests extracted from external content need the same control as any proposal. Do not ask for credentials or install integrations by surprise.
 
-## UI adaptativa y multimodal
+## Adaptive and multimodal UI
 
-Mantener anclas espaciales, foco, nombres, teclado, selección y orientación entre variantes. Ofrecer inspección y reversión de cambios adaptativos cuando proceda. Las capacidades nuevas se habilitan con detección, fallback y autorización, no solo con una etiqueta “2027-ready”.
+Keep spatial anchors, focus, names, keyboard, selection, and orientation across variants. Offer inspection and reversal of adaptive changes when appropriate. New capabilities are enabled with detection, fallback, and authorization, not only with a “2027-ready” label.
 
-Voz, imagen y acciones estructuradas deben compartir estado y permitir reparación. No depender exclusivamente de una modalidad ni permitir que dictado parcial ejecute una acción irreversible.
+Voice, image, and structured actions must share state and allow repair. Do not depend exclusively on one modality, and do not let partial dictation execute an irreversible action.
 
-## Pruebas adversas mínimas por riesgo
+## Minimum adversarial tests by risk
 
-Intentar alcance ambiguo, permiso insuficiente, resultado falso plausible, cambio de contexto, fallo parcial, desconexión, reintento, cancelación tardía y retorno. Seleccionar casos aplicables, no llenar una checklist. Evidenciar lo que se ejecutó; documentar lo que requiere evaluación de seguridad aparte.
+Try ambiguous scope, insufficient permission, a plausible false result, context change, partial failure, disconnection, retry, late cancellation, and return. Select the applicable cases; do not fill a checklist. Record evidence of what ran; document what needs a separate security evaluation.

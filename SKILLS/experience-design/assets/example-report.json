@@ -2,63 +2,63 @@
   "schema_version": "1.0",
   "session": {
     "id": "demo-import",
-    "project": "Estudio de assets — DEMO SINTÉTICA",
-    "scope": "Revisión de propuesta: comprender el resultado parcial de una importación. No es una auditoría de un producto real.",
+    "project": "Asset studio — SYNTHETIC DEMO",
+    "scope": "Proposal review: understand the partial result of an import. This is not an audit of a real product.",
     "mode": "design",
-    "language": "es",
+    "language": "en",
     "created_on": "2026-09-05",
-    "authorized_changes": "Solo artefactos de demostración locales. Sin cambios remotos.",
+    "authorized_changes": "Local demo artifacts only. No remote changes.",
     "limitations": [
-      "No hubo participantes, analítica ni ejecución de un backend.",
-      "Las cifras ilustran conteos sintéticos, no una mejora medida."
+      "There were no participants, analytics, or backend execution.",
+      "The figures illustrate synthetic counts, not a measured improvement."
     ]
   },
   "conclusion": {
     "status": "proposed",
-    "summary": "Proponer resumen persistente de resultados parciales y reintento solo de pendientes. Hipótesis pendiente de validación humana."
+    "summary": "Propose a persistent summary of partial results and a retry of pending items only. Hypothesis pending human validation."
   },
   "evidence": [
     {
       "id": "E-01",
       "kind": "simulation",
-      "location": "Ejemplo conceptual incluido en este paquete",
-      "description": "Importación simulada con elementos completados, rechazados y pendientes. No es observación de personas.",
+      "location": "Conceptual example included in this package",
+      "description": "Simulated import with completed, rejected, and pending items. This is not an observation of people.",
       "observed_on": "2026-09-05"
     }
   ],
   "coverage": [
     {
       "id": "C-01",
-      "dimension": "Comprensión del estado parcial",
+      "dimension": "Understanding of the partial state",
       "claim_kind": "human",
-      "scope": "Identificar qué se importó y qué requiere corrección",
+      "scope": "Identify what was imported and what needs correction",
       "status": "unknown",
-      "reason": "No se ejecutó una prueba con participantes.",
+      "reason": "No test with participants was run.",
       "evidence_ids": []
     },
     {
       "id": "C-02",
-      "dimension": "Idempotencia de reintento",
+      "dimension": "Retry idempotency",
       "claim_kind": "interaction",
-      "scope": "No duplicar elementos ya importados",
+      "scope": "Do not duplicate items already imported",
       "status": "unknown",
-      "reason": "El ejemplo no implementa un backend.",
+      "reason": "The example does not implement a backend.",
       "evidence_ids": []
     }
   ],
   "findings": [
     {
       "id": "UX-01",
-      "title": "El resultado parcial necesita un estado consultable",
-      "task": "Importar una selección y recuperar solo lo pendiente",
+      "title": "The partial result needs a state the person can consult",
+      "task": "Import a selection and recover only what is pending",
       "state": "partial",
-      "observation": "En la propuesta inicial solo se contemplaba una notificación transitoria; se plantea el riesgo de perder contexto.",
+      "observation": "The initial proposal only considered a transient notification; this raises the risk of losing context.",
       "classification": "hypothesis",
       "claim_kind": "human",
-      "impact": "Podría repetirse trabajo o interpretarse como fallo completo.",
+      "impact": "Work could be repeated, or the result could be read as a complete failure.",
       "severity": "P1",
       "confidence": "low",
-      "reach": "Desconocido; no hay datos de producto.",
+      "reach": "Unknown; there is no product data.",
       "evidence_ids": [
         "E-01"
       ],
@@ -71,9 +71,9 @@
         "NN-CHANGE",
         "AI-PAIR"
       ],
-      "proposal": "Mantener lista de completados, fallidos y pendientes; reintentar solo los seleccionados y comprobar el resultado.",
-      "tradeoff": "El resumen ocupa espacio; no convertirlo en ruido permanente.",
-      "acceptance_test": "Sin pistas, la persona identifica resultados y reintenta solo lo fallido; una prueba técnica comprueba que no se duplican efectos.",
+      "proposal": "Keep a list of completed, failed, and pending items; retry only the selected ones and check the result.",
+      "tradeoff": "The summary takes up space; do not turn it into permanent noise.",
+      "acceptance_test": "Without hints, the person identifies the results and retries only what failed; a technical test checks that effects are not duplicated.",
       "status": "planned",
       "resolution": "",
       "verification_evidence_ids": []
@@ -82,15 +82,15 @@
   "metrics": [
     {
       "id": "M-01",
-      "name": "Tarea correcta sin reimportar completados",
+      "name": "Correct task without reimporting completed items",
       "kind": "human",
       "status": "planned",
-      "unit": "proporción",
+      "unit": "proportion",
       "baseline": null,
       "result": null,
       "sample_size": null,
-      "population": "Usuarios pertinentes del futuro producto, por reclutar con consentimiento",
-      "method": "Prueba de tarea comparada; tamaño y criterio de decisión por definir antes de ejecutar",
+      "population": "Relevant users of the future product, to be recruited with consent",
+      "method": "Comparative task test; size and decision criterion to be defined before running",
       "comparison": true,
       "evidence_ids": []
     }
@@ -98,16 +98,16 @@
   "decisions": [
     {
       "id": "D-01",
-      "question": "¿Toast o resumen persistente?",
-      "choice": "Prototipar resumen persistente y comparar",
-      "rationale": "La tarea continúa después del mensaje; la propuesta hace consultable el estado.",
+      "question": "Toast or persistent summary?",
+      "choice": "Prototype a persistent summary and compare",
+      "rationale": "The task continues after the message; the proposal lets the person consult the state.",
       "alternatives": [
-        "Toast con enlace a historial",
-        "Vista de importación con estado por fila"
+        "Toast with a link to the history",
+        "Import view with per-row status"
       ],
-      "risk": "Añadir contención visual innecesaria si ya existe un historial suficiente",
-      "owner": "Por acordar",
-      "review_trigger": "Inspección del producto real o evidencia de prueba de tarea"
+      "risk": "Adding unnecessary visual containment if a sufficient history already exists",
+      "owner": "To be agreed",
+      "review_trigger": "Inspection of the real product or task-test evidence"
     }
   ],
   "additional_sources": []

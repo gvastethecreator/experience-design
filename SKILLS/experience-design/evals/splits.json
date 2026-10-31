@@ -1,5 +1,5 @@
 {
-  "note": "Casos preparados, no ejecutados. No mostrar rúbrica ni expected_output al agente que realiza la tarea.",
+  "note": "Prepared cases, not run. Do not show the rubric or expected_output to the agent performing the task.",
   "development": [
     "dense-editor",
     "source-only-proof",
