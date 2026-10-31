@@ -67,7 +67,7 @@ Load only the needed reference:
 
 An interactive prototype shows the consequence of an action and distinguishes real behavior from simulation. Keep user control and the information experts need to decide.
 
-**Done when:** there is a concrete decision, its costs, the costly state resolved, and observable criteria. In `apply`, implement within scope; use [ecosystem-routing.md](references/ecosystem-routing.md) only when a specialized capability is missing.
+**Done when:** there is a concrete decision, its costs, the costly state resolved, and observable criteria. In `apply`, implement within scope; use [specialist-handoff.md](references/specialist-handoff.md) when the result needs work outside this scope.
 
 ### 5. Check the claim
 

@@ -10,7 +10,7 @@ W3-WCAG22 is the consulted web normative reference. W3-WCAG3 stays under watch, 
 
 ## Review when something material changes
 
-Review the entry when contradictory evidence appears; the AI contract when actions/permissions change; accessibility when states or modalities change; performance when the journey or architecture changes; routing when an owner changes. Do a periodic review of standards and adapters as a maintenance practice, not as a promised automatic update.
+Review the entry when contradictory evidence appears; the AI contract when actions/permissions change; accessibility when states or modalities change; performance when the journey or architecture changes; the handoff boundaries when the scope changes. Do a periodic review of standards and adapters as a maintenance practice, not as a promised automatic update.
 
 A broken link is an access limitation, not a refutation of the idea. Look for a legitimate copy or the original work and keep provenance. Do not bypass paywalls, invent content, or replace studies with unlabeled commercial summaries.
 
